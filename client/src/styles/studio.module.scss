@@ -1,0 +1,73 @@
+.app { min-height: 100vh; display: flex; justify-content: center; align-items: flex-start; }
+.container { width: 100%; max-width: 760px; padding: 20px; }
+
+.topbar { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; }
+.label { font-size: 11px; letter-spacing: 0.3em; text-transform: uppercase; color: var(--muted); }
+.practiced { font-size: 12px; color: var(--muted); }
+.mono { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; color: var(--text); }
+
+.pickerRow { display: flex; gap: 8px; margin-bottom: 12px; }
+.select, .pickerEmpty {
+  flex: 1; border-radius: 8px; padding: 10px 12px; font-size: 14px; font-weight: 600;
+  background: var(--panel); color: var(--text); border: 1px solid var(--border); outline: none;
+}
+.pickerEmpty { color: var(--muted); font-weight: 400; display: flex; align-items: center; }
+.btn {
+  padding: 0 16px; border-radius: 8px; font-size: 14px; font-weight: 600; cursor: pointer;
+  background: var(--panel); color: var(--text); border: 1px solid var(--border);
+  &.active { background: var(--panel2); }
+}
+.btnGhost {
+  padding: 0 12px; border-radius: 8px; font-size: 14px; font-weight: 600; cursor: pointer;
+  background: var(--panel); color: var(--muted); border: 1px solid var(--border);
+}
+
+.importPanel { border: 1px solid var(--border); background: var(--panel); border-radius: 12px; padding: 12px; margin-bottom: 12px; }
+.dropzone { border: 1.5px dashed var(--border); background: var(--bg); border-radius: 8px; text-align: center; cursor: pointer; padding: 22px; &.has { padding: 10px; } }
+.dropHint { color: var(--muted); font-size: 13px; }
+.thumbs { display: flex; gap: 8px; flex-wrap: wrap; justify-content: center; img { height: 54px; border-radius: 4px; } }
+.addBtn { width: 100%; margin-top: 12px; padding: 10px; border-radius: 8px; font-weight: 700; font-size: 14px; border: none; cursor: pointer; background: var(--r); color: var(--bg); &:disabled { background: var(--panel); color: var(--muted); cursor: default; } }
+.hint { font-size: 12px; margin-top: 8px; color: var(--muted); }
+
+.empty { border: 1px solid var(--border); background: var(--panel); color: var(--muted); border-radius: 12px; padding: 40px; text-align: center; }
+.emptyTitle { font-size: 14px; font-weight: 600; color: var(--text); }
+.emptySub { font-size: 12px; margin-top: 4px; }
+
+.metaRow { display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px; }
+.metaName { font-size: 14px; font-weight: 700; }
+.metaInfo { display: flex; align-items: center; gap: 8px; font-size: 12px; color: var(--muted); }
+.metaSig { font-size: 20px; color: var(--text); }
+.metaWarn { color: var(--r); }
+
+.notationCard { background: #fff; border-radius: 12px; padding: 16px; margin-bottom: 12px; }
+.notation { position: relative; width: 100%; img { width: 100%; display: block; } }
+.dot { position: absolute; width: 4.5%; padding-bottom: 4.5%; transform: translate(-50%, -50%); border-radius: 50%; opacity: 0.42; }
+
+.transport { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; }
+.repeatBox { display: flex; align-items: center; gap: 8px; padding: 14px 12px; border-radius: 12px; border: 1px solid var(--border); background: var(--panel); }
+.repeatLabel { font-size: 12px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted); }
+.repeatInput { width: 48px; background: transparent; outline: none; border: none; text-align: center; font-family: ui-monospace, monospace; color: var(--text); }
+.playBtn { flex: 1; padding: 14px; border-radius: 12px; font-weight: 900; font-size: 18px; border: none; cursor: pointer; background: var(--r); color: var(--bg); &:active { transform: scale(0.99); } }
+.resetBtn { padding: 14px 16px; border-radius: 12px; border: 1px solid var(--border); background: var(--panel); color: var(--muted); font-weight: 600; cursor: pointer; }
+
+.handRow { display: flex; align-items: center; justify-content: center; gap: 24px; margin-bottom: 16px; }
+.handBox { width: 64px; height: 80px; border-radius: 16px; display: flex; align-items: center; justify-content: center; font-size: 36px; font-weight: 900; border: 1px solid var(--border); }
+.counter { text-align: center; }
+.count { font-family: ui-monospace, monospace; font-size: 30px; font-weight: 700; span { color: var(--muted); } }
+.countLabel { font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; margin-top: 4px; color: var(--muted); }
+
+.card { border: 1px solid var(--border); background: var(--panel); border-radius: 12px; padding: 16px; margin-bottom: 12px; }
+.tempoHead { display: flex; justify-content: space-between; margin-bottom: 8px; font-size: 12px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted); span.val { font-family: ui-monospace, monospace; color: var(--text); } }
+.range { width: 100%; accent-color: var(--r); }
+.levels { display: flex; gap: 8px; margin-top: 12px; }
+.levelBtn { flex: 1; padding: 8px 0; border-radius: 8px; font-size: 12px; font-weight: 600; cursor: pointer; background: var(--bg); border: 1px solid var(--border); color: var(--text); span { color: var(--muted); } &.active { background: var(--panel2); border-color: var(--r); } }
+
+.clickToggle { display: flex; border: 1px solid var(--border); border-radius: 12px; overflow: hidden; margin-bottom: 16px; }
+.clickBtn { flex: 1; padding: 10px 0; font-size: 14px; font-weight: 600; cursor: pointer; background: var(--panel); color: var(--muted); border: none; &.active { background: var(--panel2); color: var(--r); } }
+
+.progressHead { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; }
+.progressTitle { font-size: 12px; text-transform: uppercase; letter-spacing: 0.2em; color: var(--muted); }
+.doneBtn { font-size: 12px; font-weight: 700; padding: 6px 12px; border-radius: 8px; cursor: pointer; background: var(--bg); color: var(--muted); border: 1px solid var(--border); &.on { background: var(--ok); color: var(--bg); border-color: var(--ok); } }
+.stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; text-align: center; }
+.statNum { font-family: ui-monospace, monospace; font-size: 24px; font-weight: 700; }
+.statLabel { font-size: 10px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted); }

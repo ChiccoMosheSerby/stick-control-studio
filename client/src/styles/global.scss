@@ -1,0 +1,10 @@
+:root {
+  --bg: #14110F;  --panel: #1F1A17; --panel2: #241C12; --border: #2E2825;
+  --text: #EDE6DD; --muted: #8A7E73; --r: #E8A33D;     --l: #4FB0A5;     --ok: #6FBF73;
+}
+* { box-sizing: border-box; }
+html, body, #root { margin: 0; height: 100%; }
+body {
+  background: var(--bg); color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
