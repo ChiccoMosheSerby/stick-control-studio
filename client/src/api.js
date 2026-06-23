@@ -1,23 +1,26 @@
-// Thin wrapper around the backend API. Vite proxies /api -> http://localhost:4001
+// Thin wrapper around the backend API.
+// Dev: VITE_API_URL is empty and Vite proxies /api -> the local Express server.
+// Prod: set VITE_API_URL to the deployed API origin (e.g. https://stick-control-studio.onrender.com).
+const BASE = import.meta.env.VITE_API_URL ?? "";
 const J = { "Content-Type": "application/json" };
 
 export const api = {
   async getExercises() {
-    const r = await fetch("/api/exercises");
+    const r = await fetch(`${BASE}/api/exercises`);
     return r.ok ? r.json() : [];
   },
   async addExercise(ex) {
-    const r = await fetch("/api/exercises", { method: "POST", headers: J, body: JSON.stringify(ex) });
+    const r = await fetch(`${BASE}/api/exercises`, { method: "POST", headers: J, body: JSON.stringify(ex) });
     return r.ok ? r.json() : null;
   },
   async clearExercises() {
-    await fetch("/api/exercises", { method: "DELETE" });
+    await fetch(`${BASE}/api/exercises`, { method: "DELETE" });
   },
   async getProgress() {
-    const r = await fetch("/api/progress");
+    const r = await fetch(`${BASE}/api/progress`);
     return r.ok ? r.json() : {};
   },
   async saveProgress(map) {
-    await fetch("/api/progress", { method: "PUT", headers: J, body: JSON.stringify(map) });
+    await fetch(`${BASE}/api/progress`, { method: "PUT", headers: J, body: JSON.stringify(map) });
   }
 };

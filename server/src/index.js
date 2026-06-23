@@ -9,6 +9,7 @@ const app = express();
 app.use(cors());
 app.use(express.json({ limit: "25mb" }));   // exercise images are dataURLs
 
+app.get("/", (_req, res) => res.json({ service: "stick-control-studio API", health: "/api/health" }));
 app.get("/api/health", (_req, res) => res.json({ ok: true }));
 app.use("/api/exercises", exercises);
 app.use("/api/progress", progress);
