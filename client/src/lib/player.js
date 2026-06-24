@@ -18,7 +18,7 @@ export function createPlayer({ getTempo, getRepeats, getEveryNote, getVolume, on
     // Flam grace note: a soft hit ~35ms before the main one (only when sounding every note).
     if (n.hand === "F" && getEveryNote() && !n.rest) click(Math.max(t - 0.035, ctx.currentTime), 900, 0.12);
     if (n.measureStart) click(t, 1700, 0.55);
-    else if (n.beatStart) click(t, 1100, 0.4);
+    else if (n.quarterStart) click(t, 1100, 0.4);   // click every quarter (1·2·3·4), incl. cut time
     else if (getEveryNote() && !n.rest) click(t, 800, 0.15);
   };
   const tick = () => {

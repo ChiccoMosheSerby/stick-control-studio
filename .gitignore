@@ -4,6 +4,9 @@ dist
 .DS_Store
 *.log
 
+# source book PDF (not redistributable)
+StickControl.pdf
+
 # generate-single-beat build artifacts
 scripts/_montage_verify.png
 scripts/_sticking_cache.json

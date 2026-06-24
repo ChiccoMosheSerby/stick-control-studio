@@ -14,7 +14,7 @@ export default function Notation({ ex, cn, showNote, col, totalQ }) {
   }
   return (
     <div className={s.notation}>
-      <img src={ex.img} alt={ex.name} draggable={false} />
+      <img src={ex.img} alt={ex.name} draggable={false} loading="lazy" />
       {dotX != null && (
         <div
           className={s.dot}

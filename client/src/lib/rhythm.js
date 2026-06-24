@@ -31,7 +31,11 @@ export function flattenPiece(ex) {
           onsetQ: vQ, dur, value: e.value, tuplet: e.tuplet || null,   // value/tuplet threaded for labels + placement
           rest: e.type === "rest", hand: e.type === "rest" ? null : (e.hand || null),
           x: e.x ?? null, tie: !!e.tie, inst: v.inst || "snare",
-          beatStart: Math.abs(k - Math.round(k)) < 1e-6, measureStart: Math.abs(rel) < 1e-6
+          beatStart: Math.abs(k - Math.round(k)) < 1e-6, measureStart: Math.abs(rel) < 1e-6,
+          // quarter-note pulse: the metronome clicks here and the visual counts here, so
+          // both run in quarters — 1·2·3·4 per bar for 4/4 AND cut time (2/2).
+          quarterStart: Math.abs(rel - Math.round(rel)) < 1e-6,
+          beat: Math.floor(rel + 1e-6) + 1, beats: Math.round(mlen)
         });
         vQ += dur;
       });
