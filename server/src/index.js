@@ -6,6 +6,7 @@ import cors from "cors";
 import { connectDB } from "./db.js";
 import exercises from "./routes/exercises.js";
 import progress from "./routes/progress.js";
+import read from "./routes/read.js";
 
 const app = express();
 app.use(cors());
@@ -14,6 +15,7 @@ app.use(express.json({ limit: "25mb" }));   // exercise images are dataURLs
 app.get("/api/health", (_req, res) => res.json({ ok: true }));
 app.use("/api/exercises", exercises);
 app.use("/api/progress", progress);
+app.use("/api/read", read);
 
 // Serve the built React client and fall back to index.html for client-side routes.
 const __dirname = path.dirname(fileURLToPath(import.meta.url));

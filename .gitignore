@@ -3,3 +3,7 @@ dist
 .env
 .DS_Store
 *.log
+
+# generate-single-beat build artifacts
+scripts/_montage_verify.png
+scripts/_sticking_cache.json

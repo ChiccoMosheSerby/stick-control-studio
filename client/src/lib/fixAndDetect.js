@@ -68,6 +68,84 @@ export async function fixAndDetect(dataUrl) {
   const thr = mx * 0.38; const fr = []; let x = 0;
   while (x < cw) { if (sm[x] > thr) { let j = x; while (j < cw && sm[j] > thr) j++; const c = ((x + j) / 2) / cw; if (j - x > 2 && c > 0.10 && c < 0.97) fr.push(c); x = j + 2; } else x++; }
 
+  // --- beam-based note positions (robust for single-beat 16-eighth pages) ---
+  // Beams are thick horizontal bars ABOVE the staff. The clef, time signature and
+  // barlines have no beam, so they're excluded automatically. Each beam spans one
+  // group of beamed eighth notes; we place notes evenly under each beam.
+  let notes = null, nhYC = null;
+  {
+    const bandTop = miny, bandBot = staffTop;          // region above the top staff line
+    if (bandBot - bandTop >= 3) {
+      const rowDark = new Int32Array(H); let rowMax = 0;
+      for (let y = bandTop; y < bandBot; y++) { let c = 0; for (let xx = minx; xx <= maxx; xx++) if (d2[y * W + xx]) c++; rowDark[y] = c; if (c > rowMax) rowMax = c; }
+      // columns covered by strong (beam) rows -> beam x-coverage
+      const beamMask = new Uint8Array(cw);
+      if (rowMax > 0) for (let y = bandTop; y < bandBot; y++) { if (rowDark[y] < rowMax * 0.5) continue; for (let xx = minx; xx <= maxx; xx++) if (d2[y * W + xx]) beamMask[xx - minx] = 1; }
+      // contiguous beam segments (bridge tiny gaps from anti-aliasing, drop specks)
+      const gapTol = Math.max(2, Math.round(cw * 0.012)), minSeg = Math.max(6, Math.round(cw * 0.04));
+      const segs = []; let xi = 0;
+      while (xi < cw) {
+        if (beamMask[xi]) { let j = xi, last = xi; while (j < cw && (beamMask[j] || j - last <= gapTol)) { if (beamMask[j]) last = j; j++; } if (last - xi + 1 >= minSeg) segs.push([xi, last]); xi = last + 1; }
+        else xi++;
+      }
+      // Detect noteheads by morphological opening + connected components (accurate & verified).
+      // Noteheads are solid ~one-space blobs; stems, staff lines, barlines and the time signature
+      // are all thin and vanish under erosion. We open the dark map inside the staff band, label
+      // the surviving blobs and take their centroids. The clef/timesig are excluded by starting at
+      // the first beam (minus one notehead so the first note isn't clipped); the repeat-sign dots
+      // are dropped by a median-area filter. noteY comes from the actual blob centres.
+      // staff-line spacing (robust): median gap between staff-line starts
+      const lineStarts = [];
+      { let inrun = false; for (let y = staffTop; y <= staffBot; y++) { const st = isStaff[y]; if (st && !inrun) { lineStarts.push(y); inrun = true; } else if (!st) inrun = false; } }
+      let sp = 8;
+      if (lineStarts.length >= 2) { const dd = []; for (let i = 1; i < lineStarts.length; i++) dd.push(lineStarts[i] - lineStarts[i - 1]); dd.sort((a, b) => a - b); sp = dd[dd.length >> 1]; }
+      const nh = Math.max(3, Math.round(sp * 0.9)), er = Math.max(1, nh >> 2);
+      let xStart = (segs.length ? segs[0][0] : 0) - nh; if (xStart < 0) xStart = 0;
+      const staffTopC = staffTop - miny, staffBotC = staffBot - miny;
+
+      // work mask in content space (cw x chh): dark, inside staff band, right of xStart, staff rows removed
+      const work = new Uint8Array(cw * chh);
+      for (let cy = 0; cy < chh; cy++) {
+        if (cy < staffTopC - 2 || cy > staffBotC + 2) continue;
+        const yFull = cy + miny; if (isStaff[yFull]) continue;
+        for (let cx = xStart; cx < cw; cx++) if (d2[yFull * W + (cx + minx)]) work[cy * cw + cx] = 1;
+      }
+      // morphological opening with a (2er+1) square: erode (separable min) then dilate (separable max)
+      const morph = (src, useMin) => {
+        const tmp = new Uint8Array(cw * chh), out = new Uint8Array(cw * chh);
+        for (let cy = 0; cy < chh; cy++) for (let cx = 0; cx < cw; cx++) { let v = useMin ? 1 : 0; for (let k = -er; k <= er; k++) { const x = cx + k; const sv = (x >= 0 && x < cw) ? src[cy * cw + x] : 0; v = useMin ? (v && sv) : (v || sv); } tmp[cy * cw + cx] = v ? 1 : 0; }
+        for (let cy = 0; cy < chh; cy++) for (let cx = 0; cx < cw; cx++) { let v = useMin ? 1 : 0; for (let k = -er; k <= er; k++) { const y = cy + k; const sv = (y >= 0 && y < chh) ? tmp[y * cw + cx] : 0; v = useMin ? (v && sv) : (v || sv); } out[cy * cw + cx] = v ? 1 : 0; }
+        return out;
+      };
+      const opened = morph(morph(work, true), false);   // erosion then dilation
+
+      // connected components (4-connectivity) via stack flood fill
+      const lab = new Uint8Array(cw * chh), comps = [], stack = [];
+      for (let cy = 0; cy < chh; cy++) for (let cx = 0; cx < cw; cx++) {
+        const p0 = cy * cw + cx; if (!opened[p0] || lab[p0]) continue;
+        let sumX = 0, sumY = 0, cnt = 0, x0 = cx, x1 = cx; lab[p0] = 1; stack.length = 0; stack.push(p0);
+        while (stack.length) {
+          const p = stack.pop(), px2 = p % cw, py2 = (p - px2) / cw;
+          sumX += px2; sumY += py2; cnt++; if (px2 < x0) x0 = px2; if (px2 > x1) x1 = px2;
+          if (px2 > 0 && opened[p - 1] && !lab[p - 1]) { lab[p - 1] = 1; stack.push(p - 1); }
+          if (px2 < cw - 1 && opened[p + 1] && !lab[p + 1]) { lab[p + 1] = 1; stack.push(p + 1); }
+          if (py2 > 0 && opened[p - cw] && !lab[p - cw]) { lab[p - cw] = 1; stack.push(p - cw); }
+          if (py2 < chh - 1 && opened[p + cw] && !lab[p + cw]) { lab[p + cw] = 1; stack.push(p + cw); }
+        }
+        if (cnt >= nh * nh * 0.3 && (x1 - x0 + 1) <= sp * 2.5) comps.push({ x: sumX / cnt, y: sumY / cnt, a: cnt });
+      }
+      // drop small blobs (repeat-sign dots / specks) via median area, then sort left-to-right
+      if (comps.length) {
+        const areas = comps.map((c) => c.a).sort((a, b) => a - b), medA = areas[areas.length >> 1];
+        const keep = comps.filter((c) => c.a >= 0.5 * medA).sort((a, b) => a.x - b.x);
+        if (keep.length) {
+          notes = keep.map((c) => c.x / cw);
+          const yc = keep.map((c) => c.y).sort((a, b) => a - b); nhYC = yc[yc.length >> 1] / chh;
+        }
+      }
+    }
+  }
+
   // DISPLAY: grayscale, deskewed, cropped, centered, gentle brightness lift (no hard threshold)
   let lo = 255, hi = 0; for (let y = miny; y <= maxy; y++) for (let xx = minx; xx <= maxx; xx++) { const v = g2[y * W + xx]; if (v < lo) lo = v; if (v > hi) hi = v; }
   lo = lo + (hi - lo) * 0.06; const rng = Math.max(1, hi - lo);
@@ -75,7 +153,7 @@ export async function fixAndDetect(dataUrl) {
   const octx = out.getContext("2d"); const oi = octx.createImageData(cw, chh);
   for (let y = 0; y < chh; y++) for (let xx = 0; xx < cw; xx++) { let v = (g2[(y + miny) * W + (xx + minx)] - lo) / rng * 255; v = v < 0 ? 0 : v > 255 ? 255 : v; const o = (y * cw + xx) * 4; oi.data[o] = oi.data[o + 1] = oi.data[o + 2] = v; oi.data[o + 3] = 255; }
   octx.putImageData(oi, 0, 0);
-  return { img: out.toDataURL("image/png"), fr, noteY: (nhRow - miny) / chh };
+  return { img: out.toDataURL("image/png"), fr, notes, noteY: nhYC != null ? nhYC : (nhRow - miny) / chh };
 }
 
 // Placeholder. Wire this to a server route that calls a vision model or OCR.
