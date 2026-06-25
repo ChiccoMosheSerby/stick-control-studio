@@ -14,6 +14,7 @@ const clamp = (v, lo, hi) => Math.max(lo, Math.min(hi, v));
 // — notes stay full size — then auto-scroll horizontally to keep the active note centered.
 export default function Notation({ ex, cn, showNote, col, totalQ }) {
   const viewRef = useRef(null);
+  const leftRef = useRef(0);          // committed scroll offset (px) of the strip
   const [wide, setWide] = useState(false);
 
   let dotX = null;
@@ -22,13 +23,26 @@ export default function Notation({ ex, cn, showNote, col, totalQ }) {
     else if (totalQ > 0) dotX = LEFT + (RIGHT - LEFT) * (cn.onsetQ / totalQ);
   }
 
-  // keep the active dot in view; reset to the start when idle or when the strip fits.
+  // Page-flip scrolling: hold the strip still while the active note is on screen, and only
+  // when it reaches the last note in view (or the line loops back) jump so that note lands
+  // near the start — a fresh page ahead. Minimal movement for the drummer to track.
   useEffect(() => {
     const view = viewRef.current;
     if (!view || !wide) return;
-    const sw = view.scrollWidth, vw = view.clientWidth;
-    const left = (dotX == null || sw <= vw + 1) ? 0 : clamp(dotX * sw - vw / 2, 0, sw - vw);
-    view.scrollTo({ left, behavior: "smooth" });
+    const sw = view.scrollWidth, vw = view.clientWidth, maxLeft = Math.max(0, sw - vw);
+    if (sw <= vw + 1) return;                       // fits in one page: never scroll
+    if (dotX == null) {                             // idle / stopped: rest at the start
+      if (leftRef.current !== 0) { leftRef.current = 0; view.scrollTo({ left: 0, behavior: "smooth" }); }
+      return;
+    }
+    const pos = dotX * sw, rel = pos - leftRef.current;   // note's px offset from current left edge
+    const EDGE = Math.max(36, vw * 0.06);                 // ~one note in from the right edge
+    const PAD = Math.max(12, vw * 0.03);                  // where the note lands after a flip
+    if (rel > vw - EDGE || rel < 0) {                     // reached the last note in view, or looped back
+      const next = clamp(pos - PAD, 0, maxLeft);
+      leftRef.current = next;
+      view.scrollTo({ left: next, behavior: "smooth" });
+    }
   }, [dotX, wide]);
 
   const onImgLoad = (e) => {
