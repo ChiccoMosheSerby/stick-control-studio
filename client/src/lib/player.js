@@ -38,19 +38,22 @@ export function createPlayer({ getTempo, getRepeats, getEveryNote, getVolume, on
   };
   // A tempo-matched count-in precedes the timeline: `countBeats` quarter-note clicks
   // (the "1" accented) so the player knows the pulse before the first note sounds.
+  // Only at a true start though — resuming after a pause (idx/meas already advanced)
+  // jumps straight back in with no count.
   async function play(piece, countBeats = 4) {
     timeline = piece;
     if (!ctx) ctx = new (window.AudioContext || window.webkitAudioContext)();
     await ctx.resume();
+    const beats = (idx === 0 && meas === 0) ? countBeats : 0;   // count in only from the beginning
     const beat = 60 / getTempo(), t0 = ctx.currentTime + 0.12;
     cq = []; countOsc = [];
-    for (let i = 0; i < countBeats; i++) {
+    for (let i = 0; i < beats; i++) {
       const t = t0 + i * beat;
       const o = click(t, i === 0 ? 1700 : 1100, i === 0 ? 0.55 : 0.4);   // click each count, accent the 1
       if (o) countOsc.push(o);                                            // so Pause can silence pending counts
       cq.push({ time: t, n: i + 1 });
     }
-    nextT = t0 + countBeats * beat;       // first note lands on the beat after the count-in
+    nextT = t0 + beats * beat;             // first note lands on the beat after the count-in
     cq.push({ time: nextT, n: 0 });        // n=0 clears the on-screen count as notes begin
     sched = setInterval(tick, 25);
     raf = requestAnimationFrame(draw);
