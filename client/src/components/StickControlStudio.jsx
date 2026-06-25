@@ -261,7 +261,7 @@ export default function StickControlStudio() {
             <input className={s.range} type="range" min={40} max={200} value={tempo} disabled={!available} onChange={(e) => setTempo(+e.target.value)} />
             <div className={s.levels}>
               {LEVELS.map(([n, t]) => (
-                <button key={n} className={`${s.levelBtn} ${tempo === t ? s.active : ""}`} disabled={!available} onClick={() => setTempo(t)}>{n}<br /><span>{t}</span></button>
+                <button key={n} className={`${s.levelBtn} ${tempo === t ? s.active : ""}`} disabled={!available} onClick={() => setTempo(t)}><span>{t}</span></button>
               ))}
             </div>
             <div className={s.tempoHead} style={{ marginTop: 16 }}><span>Click volume</span><span className="val" style={{ fontFamily: "ui-monospace, monospace", color: C.text }}>{Math.round(volume * 100)}%</span></div>

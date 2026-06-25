@@ -539,11 +539,17 @@
 
 .dot {
   position: absolute;
-  width: 10px;
-  padding-bottom: 10px;
+  width: 15px;
+  padding-bottom: 15px;
   transform: translate(-50%, -50%);
   border-radius: 50%;
   opacity: 0.42;
+
+  @media (max-width: 560px) {
+    width: 12px;
+    padding-bottom: 12px;
+
+  }
 }
 
 // Long Triplet combination lines (page 9): the strip is wider than the card, rendered at the
@@ -551,11 +557,13 @@
 .notationScroll {
   scroll-behavior: smooth;
 }
+
 .notationScroll .strip {
   position: relative;
   height: 100%;
   width: max-content;
 }
+
 .notationScroll .strip img {
   width: auto;
   height: 100%;
