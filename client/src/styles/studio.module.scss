@@ -628,6 +628,34 @@
   }
 }
 
+// Pre-roll count-in: a big number centred near the top of the screen, one per beat.
+@keyframes countPop {
+  from { transform: translateX(-50%) scale(1.4); opacity: 0.35; }
+  to   { transform: translateX(-50%) scale(1);   opacity: 1; }
+}
+.countIn {
+  position: fixed;
+  top: 12%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 60;
+  width: 104px;
+  height: 104px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(20, 17, 15, 0.92);
+  border: 3px solid var(--r);
+  color: var(--r);
+  font-family: ui-monospace, monospace;
+  font-size: 56px;
+  font-weight: 900;
+  box-shadow: 0 10px 34px rgba(0, 0, 0, 0.55);
+  animation: countPop 0.18s ease-out;
+  pointer-events: none;
+}
+
 .demoBtn {
   flex-shrink: 0;
   padding: 14px 16px;

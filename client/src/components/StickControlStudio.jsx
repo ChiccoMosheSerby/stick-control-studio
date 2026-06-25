@@ -35,6 +35,7 @@ export default function StickControlStudio() {
   const [playing, setPlaying] = useState(false);
   const [demoing, setDemoing] = useState(false);        // preview playback: sound+visual, not counted
   const [advanceToken, setAdvanceToken] = useState(0);  // bump -> carousel advances to the next exercise
+  const [countIn, setCountIn] = useState(0);            // 1..4 during the pre-roll count, 0 = none
   const [cur, setCur] = useState(-1);
   const [reps, setReps] = useState(0);
   const [progress, setProgress] = useState({});
@@ -121,6 +122,7 @@ export default function StickControlStudio() {
       getEveryNote: () => subRef.current,
       getVolume: () => volRef.current,
       onNote: (idx) => setCur(idx),
+      onCount: (n) => setCountIn(n),   // pre-roll count display (1..4, then 0)
       onRepeat: (m) => { measRef.current = m; setReps(m); },
       onFinish: () => {
         if (playerRef.current) playerRef.current.reset();
@@ -140,16 +142,17 @@ export default function StickControlStudio() {
     });
     return playerRef.current;
   };
-  const play = async () => { const e = library.find((x) => x.id === selRef.current); if (!e) return; demoRef.current = false; setDemoing(false); setPlaying(true); await ensurePlayer().play(flatten(e)); };
+  const play = async () => { const e = library.find((x) => x.id === selRef.current); if (!e) return; demoRef.current = false; setDemoing(false); setPlaying(true); await ensurePlayer().play(flatten(e), e.measureBeats || 4); };
   const demo = async () => {   // preview: hear + see the exercise once, nothing counted
     const e = library.find((x) => x.id === selRef.current); if (!e) return;
     if (playerRef.current) playerRef.current.reset();
     measRef.current = 0; accRef.current = 0; resumeRef.current = false; setReps(0);
     demoRef.current = true; setDemoing(true); setPlaying(true);
-    await ensurePlayer().play(flatten(e));
+    await ensurePlayer().play(flatten(e), e.measureBeats || 4);
   };
   const pause = () => {
     if (playerRef.current) playerRef.current.stop();
+    setCountIn(0);   // abandon any in-progress count-in
     if (demoRef.current) { demoRef.current = false; setDemoing(false); setPlaying(false); setCur(-1); measRef.current = 0; accRef.current = 0; setReps(0); return; }
     setPlaying(false); credit();   // bank partial reps on pause
   };
@@ -177,6 +180,8 @@ export default function StickControlStudio() {
 
   return (
     <div className={s.app}>
+      {/* tempo-matched pre-roll count, big and centred near the top of the screen */}
+      {countIn > 0 && <div key={countIn} className={s.countIn} aria-hidden="true">{countIn}</div>}
       <div className={s.container}>
         <div className={s.topbar}>
           <div className={s.brandRow}>
