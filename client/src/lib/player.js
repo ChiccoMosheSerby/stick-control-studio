@@ -22,13 +22,37 @@ export function createPlayer({ getTempo, getRepeats, getEveryNote, getVolume, on
     else if (n.quarterStart) click(t, 1100, 0.4);   // click every quarter (1·2·3·4), incl. cut time
     else if (getEveryNote() && !n.rest) click(t, 800, 0.15);
   };
+  // Schedule `beats` count-in clicks from the current nextT and advance nextT past them,
+  // so the count keeps the very same pulse the music is on (used both at first start and,
+  // crucially, between exercises so the hand-off never breaks tempo).
+  const scheduleCountIn = (beats) => {
+    const beat = 60 / getTempo();
+    for (let i = 0; i < beats; i++) {
+      const t = nextT + i * beat;
+      const o = click(t, i === 0 ? 1700 : 1100, i === 0 ? 0.55 : 0.4);   // accent the 1
+      if (o) countOsc.push(o);                                            // so Pause can silence pending counts
+      cq.push({ time: t, n: i + 1 });
+    }
+    cq.push({ time: nextT + beats * beat, n: 0 });   // n=0 clears the on-screen count
+    nextT += beats * beat;
+  };
   const tick = () => {
     while (nextT < ctx.currentTime + 0.12) {
       const n = timeline[idx];
       if (!n.tie) voice(nextT, n);                          // tied-into notes don't re-articulate
       q.push({ time: nextT, idx });
       nextT += n.dur * (60 / getTempo()); idx++;
-      if (idx >= timeline.length) { idx = 0; meas++; if (meas >= getRepeats()) { stop(); onFinish(); return; } }
+      if (idx >= timeline.length) {
+        idx = 0; meas++;
+        if (meas >= getRepeats()) {
+          // Hand off without stopping the clock: the host returns the next piece (and
+          // advances the UI), or null. A count-in continues straight off nextT, so the
+          // metronome rides through the change in perfect time; the carousel slides during it.
+          const nxt = onFinish ? onFinish() : null;
+          if (nxt && nxt.piece) { timeline = nxt.piece; idx = 0; meas = 0; scheduleCountIn(nxt.countBeats || 0); }
+          else { reset(); return; }
+        }
+      }
     }
   };
   const draw = () => {
@@ -44,17 +68,9 @@ export function createPlayer({ getTempo, getRepeats, getEveryNote, getVolume, on
     timeline = piece;
     if (!ctx) ctx = new (window.AudioContext || window.webkitAudioContext)();
     await ctx.resume();
-    const beats = (idx === 0 && meas === 0) ? countBeats : 0;   // count in only from the beginning
-    const beat = 60 / getTempo(), t0 = ctx.currentTime + 0.12;
     cq = []; countOsc = [];
-    for (let i = 0; i < beats; i++) {
-      const t = t0 + i * beat;
-      const o = click(t, i === 0 ? 1700 : 1100, i === 0 ? 0.55 : 0.4);   // click each count, accent the 1
-      if (o) countOsc.push(o);                                            // so Pause can silence pending counts
-      cq.push({ time: t, n: i + 1 });
-    }
-    nextT = t0 + beats * beat;             // first note lands on the beat after the count-in
-    cq.push({ time: nextT, n: 0 });        // n=0 clears the on-screen count as notes begin
+    nextT = ctx.currentTime + 0.12;
+    scheduleCountIn((idx === 0 && meas === 0) ? countBeats : 0);   // count in only from the beginning
     sched = setInterval(tick, 25);
     raf = requestAnimationFrame(draw);
   }

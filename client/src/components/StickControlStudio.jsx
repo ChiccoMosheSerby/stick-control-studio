@@ -64,7 +64,7 @@ export default function StickControlStudio() {
   const doneIds = new Set(Object.keys(progress).filter((k) => progress[k]?.done));  // for the ✓ on done exercises
 
   const playerRef = useRef(null), measRef = useRef(0), accRef = useRef(0);
-  const demoRef = useRef(false), resumeRef = useRef(false), exListRef = useRef([]);
+  const demoRef = useRef(false), autoAdvancingRef = useRef(false), exListRef = useRef([]);
   exListRef.current = topicExercises;   // current topic's exercises, for auto-advance order
   const tempoRef = useRef(76), repRef = useRef(20), subRef = useRef(true), volRef = useRef(0.8), selRef = useRef(null);
   useEffect(() => { tempoRef.current = tempo; }, [tempo]);
@@ -124,20 +124,24 @@ export default function StickControlStudio() {
       onNote: (idx) => setCur(idx),
       onCount: (n) => setCountIn(n),   // pre-roll count display (1..4, then 0)
       onRepeat: (m) => { measRef.current = m; setReps(m); },
+      // Returns the NEXT piece to play (the player keeps its clock running and counts it in
+      // on-beat), or null to stop. Also drives the matching UI (advance/stop) as a side effect.
       onFinish: () => {
-        if (playerRef.current) playerRef.current.reset();
         if (demoRef.current) {   // preview done: clean up, count nothing
           demoRef.current = false; setDemoing(false); setPlaying(false); setCur(-1);
-          measRef.current = 0; accRef.current = 0; setReps(0); return;
+          measRef.current = 0; accRef.current = 0; setReps(0); return null;
         }
         credit();                                  // bank the completed reps + mark done
-        measRef.current = 0; accRef.current = 0; setCur(-1);
         const list = exListRef.current, i = list.findIndex((e) => e.id === selRef.current);
-        if (i >= 0 && i < list.length - 1) {       // auto-advance to the next exercise and keep playing
-          resumeRef.current = true; setReps(0); setAdvanceToken((t) => t + 1);
-        } else {                                    // last exercise in the topic: stop on a full count
-          setPlaying(false); setReps(repRef.current);
+        if (i >= 0 && i < list.length - 1) {       // hand off to the next exercise, in time
+          const next = list[i + 1];
+          autoAdvancingRef.current = true;         // tell pickExercise not to reset the running player
+          measRef.current = 0; accRef.current = 0; setReps(0); setCur(-1);
+          setAdvanceToken((t) => t + 1);           // slide the carousel to the next exercise's image
+          return { piece: flatten(next), countBeats: next.measureBeats || 4 };
         }
+        setPlaying(false); setCur(-1); measRef.current = 0; accRef.current = 0; setReps(repRef.current);  // last: stop
+        return null;
       }
     });
     return playerRef.current;
@@ -146,20 +150,23 @@ export default function StickControlStudio() {
   const demo = async () => {   // preview: hear + see the exercise once, nothing counted
     const e = library.find((x) => x.id === selRef.current); if (!e) return;
     if (playerRef.current) playerRef.current.reset();
-    measRef.current = 0; accRef.current = 0; resumeRef.current = false; setReps(0);
+    measRef.current = 0; accRef.current = 0; setReps(0);
     demoRef.current = true; setDemoing(true); setPlaying(true);
     await ensurePlayer().play(flatten(e), e.measureBeats || 4);
   };
   const pause = () => {
     if (playerRef.current) playerRef.current.stop();
-    setCountIn(0);   // abandon any in-progress count-in
+    setCountIn(0); autoAdvancingRef.current = false;   // abandon any in-progress count-in / hand-off
     if (demoRef.current) { demoRef.current = false; setDemoing(false); setPlaying(false); setCur(-1); measRef.current = 0; accRef.current = 0; setReps(0); return; }
     setPlaying(false); credit();   // bank partial reps on pause
   };
   const reset = () => { pause(); if (playerRef.current) playerRef.current.reset(); measRef.current = 0; accRef.current = 0; setCur(-1); setReps(0); };
-  const pickExercise = useCallback((id) => { reset(); setSelId(id); }, []);
-  // after an auto-advance lands on the next exercise, resume playback there
-  useEffect(() => { if (resumeRef.current) { resumeRef.current = false; play(); } }, [selId]);
+  // Manual pick resets + selects; during an auto-advance hand-off we only swap the selection
+  // so the player's running clock isn't disturbed.
+  const pickExercise = useCallback((id) => {
+    if (autoAdvancingRef.current) { autoAdvancingRef.current = false; setSelId(id); }
+    else { reset(); setSelId(id); }
+  }, []);
   const pickTopic = (id) => {
     if (id === topicId) return;
     reset(); setTopicId(id);
