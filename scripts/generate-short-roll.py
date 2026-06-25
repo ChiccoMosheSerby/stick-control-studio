@@ -36,18 +36,31 @@ ROOT       = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PDF_PATH   = os.path.join(ROOT, "StickControl.pdf")
 OUT_DIR    = os.path.join(ROOT, "client", "public", "exercises")
 MANIFEST   = os.path.join(OUT_DIR, "exercises.json")
-MONTAGE    = os.path.join(ROOT, "scripts", "_montage_verify_short_roll.png")
-STEMS_DBG  = os.path.join(ROOT, "scripts", "_stems_debug_short_roll.png")
 ENV_PATH   = os.path.join(ROOT, "server", ".env")
 
-PAGE       = 12
 DPI        = 300
 PADT, PADB = 6, 8
 TW, TH     = 1100, 200          # crop size (24 notes packed tighter than page 10 -> a bit wider)
-SECTION    = "Short Roll Combinations (Single Beat Rolls)"
-IDPREFIX   = "short-roll-single"
 FX0        = 0.03
 NOTEHEAD_DX = -0.004
+
+# Two near-identical sections (same rhythm, different sticking). Pick with --double.
+#   single = PDF p12, Single Beat Rolls (beat-2 roll = single strokes)
+#   double = PDF p13, Double Beat Rolls (beat-2 roll = double strokes); a "* N stroke open
+#            roll" annotation sits under row 1, so it needs a tighter band-merge gap (24px)
+#            to keep that annotation out of the row-1 band.
+VARIANTS = {
+    "single": dict(page=12, section="Short Roll Combinations (Single Beat Rolls)",
+                   idprefix="short-roll-single", gap=60, sfx=""),
+    "double": dict(page=13, section="Short Roll Combinations (Double Beat Rolls)",
+                   idprefix="short-roll-double", gap=24, sfx="_double"),
+}
+CFG      = VARIANTS["double" if "--double" in sys.argv else "single"]
+PAGE     = CFG["page"]
+SECTION  = CFG["section"]
+IDPREFIX = CFG["idprefix"]
+GAP      = CFG["gap"]
+SFX      = CFG["sfx"]
 
 # Per-column rhythm. Each tuple is (count, note-value, is_rest); concatenated per measure.
 # notes-per-measure = sum of counts where not rest.
@@ -60,8 +73,10 @@ COLS = {  # side -> (notes_per_exercise, pattern, FX1)
     "R": (2 * notes_per_measure(RIGHT_PATTERN), RIGHT_PATTERN, 0.86),
 }
 
-CACHE_PATH = os.path.join(ROOT, "scripts", "_sticking_cache_short_roll.json")
-GT_PATH    = os.path.join(ROOT, "scripts", "short-roll-single-sticking.json")  # per exercise num
+MONTAGE    = os.path.join(ROOT, "scripts", f"_montage_verify_short_roll{SFX}.png")
+STEMS_DBG  = os.path.join(ROOT, "scripts", f"_stems_debug_short_roll{SFX}.png")
+CACHE_PATH = os.path.join(ROOT, "scripts", f"_sticking_cache_short_roll{SFX}.json")
+GT_PATH    = os.path.join(ROOT, "scripts", f"{IDPREFIX}-sticking.json")  # per exercise num
 USE_VISION = "--no-vision" not in sys.argv
 DEBUG      = "--debug" in sys.argv
 
@@ -83,7 +98,7 @@ def render_page(doc, pno):
     pix = doc[pno - 1].get_pixmap(matrix=fitz.Matrix(DPI / 72, DPI / 72), colorspace=fitz.csGRAY)
     return np.frombuffer(pix.samples, dtype=np.uint8).reshape(pix.height, pix.width)
 
-def row_bands(ink, H):
+def row_bands(ink, H, gap=60):
     rs = ink.sum(axis=1); on = rs > rs.max() * 0.08
     raw = []; i = 0
     while i < H:
@@ -94,7 +109,7 @@ def row_bands(ink, H):
         else: i += 1
     merged = []
     for b in raw:
-        if merged and b[0] - merged[-1][1] < 60: merged[-1][1] = b[1]
+        if merged and b[0] - merged[-1][1] < gap: merged[-1][1] = b[1]
         else: merged.append(b)
     return [m for m in merged if m[1] - m[0] > 120]
 
@@ -209,7 +224,7 @@ def main():
     os.makedirs(OUT_DIR, exist_ok=True)
     doc = fitz.open(PDF_PATH)
     img = render_page(doc, PAGE); H, W = img.shape; ink = (img < 128).astype(np.uint8)
-    bands = row_bands(ink, H)
+    bands = row_bands(ink, H, GAP)
     assert len(bands) == 12, f"page {PAGE}: expected 12 row-bands, got {len(bands)}"
     g = gutter_x(ink, W)
     columns = [("L", 120, g - 10), ("R", g + 10, W - 30)]
