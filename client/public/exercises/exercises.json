@@ -25465,5 +25465,6029 @@
     ]
    }
   ]
+ },
+ {
+  "id": "short-roll-single-001",
+  "name": "Short Roll · 1",
+  "section": "Short Roll Combinations (Single Beat Rolls)",
+  "img": "/exercises/short-roll-single-001.png",
+  "noteY": 0.4333,
+  "aligned": true,
+  "timeSig": "¢",
+  "time": {
+   "num": 2,
+   "den": 2
+  },
+  "meter": "cut time (2/2)",
+  "noteValue": "eighths + sixteenth rolls",
+  "measureBeats": 4,
+  "measures": [
+   {
+    "voices": [
+     {
+      "inst": "snare",
+      "stem": "up",
+      "events": [
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.026,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.0615,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.098,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.1336,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.1792,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.2157,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.2513,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.2868,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.3385,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.372,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.4075,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.442,
+        "tie": false
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "voices": [
+     {
+      "inst": "snare",
+      "stem": "up",
+      "events": [
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.51,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.5455,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.582,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.6175,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.6632,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.6997,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.7352,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.7718,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.8225,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.856,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.8905,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.926,
+        "tie": false
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "short-roll-single-002",
+  "name": "Short Roll · 2",
+  "section": "Short Roll Combinations (Single Beat Rolls)",
+  "img": "/exercises/short-roll-single-002.png",
+  "noteY": 0.4333,
+  "aligned": true,
+  "timeSig": "¢",
+  "time": {
+   "num": 2,
+   "den": 2
+  },
+  "meter": "cut time (2/2)",
+  "noteValue": "eighths + sixteenth rolls",
+  "measureBeats": 4,
+  "measures": [
+   {
+    "voices": [
+     {
+      "inst": "snare",
+      "stem": "up",
+      "events": [
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.026,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.0615,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.098,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.1336,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.1792,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.2157,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.2513,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.2868,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.3385,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.372,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.4075,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.442,
+        "tie": false
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "voices": [
+     {
+      "inst": "snare",
+      "stem": "up",
+      "events": [
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.51,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.5455,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.582,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.6175,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.6632,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.6997,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.7352,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.7718,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.8225,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.856,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.8905,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.926,
+        "tie": false
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "short-roll-single-003",
+  "name": "Short Roll · 3",
+  "section": "Short Roll Combinations (Single Beat Rolls)",
+  "img": "/exercises/short-roll-single-003.png",
+  "noteY": 0.4333,
+  "aligned": true,
+  "timeSig": "¢",
+  "time": {
+   "num": 2,
+   "den": 2
+  },
+  "meter": "cut time (2/2)",
+  "noteValue": "eighths + sixteenth rolls",
+  "measureBeats": 4,
+  "measures": [
+   {
+    "voices": [
+     {
+      "inst": "snare",
+      "stem": "up",
+      "events": [
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.026,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.0615,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.098,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.1336,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.1792,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.2157,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.2513,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.2868,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.3385,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.372,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.4075,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.442,
+        "tie": false
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "voices": [
+     {
+      "inst": "snare",
+      "stem": "up",
+      "events": [
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.51,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.5455,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.582,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.6175,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.6632,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.6997,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.7352,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.7718,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.8225,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.856,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.8905,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.926,
+        "tie": false
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "short-roll-single-004",
+  "name": "Short Roll · 4",
+  "section": "Short Roll Combinations (Single Beat Rolls)",
+  "img": "/exercises/short-roll-single-004.png",
+  "noteY": 0.4333,
+  "aligned": true,
+  "timeSig": "¢",
+  "time": {
+   "num": 2,
+   "den": 2
+  },
+  "meter": "cut time (2/2)",
+  "noteValue": "eighths + sixteenth rolls",
+  "measureBeats": 4,
+  "measures": [
+   {
+    "voices": [
+     {
+      "inst": "snare",
+      "stem": "up",
+      "events": [
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.026,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.0615,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.098,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.1336,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.1792,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.2157,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.2513,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.2868,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.3385,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.372,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.4075,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.442,
+        "tie": false
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "voices": [
+     {
+      "inst": "snare",
+      "stem": "up",
+      "events": [
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.51,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.5455,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.582,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.6175,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.6632,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.6997,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.7352,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.7718,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.8225,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.856,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.8905,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.926,
+        "tie": false
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "short-roll-single-005",
+  "name": "Short Roll · 5",
+  "section": "Short Roll Combinations (Single Beat Rolls)",
+  "img": "/exercises/short-roll-single-005.png",
+  "noteY": 0.4333,
+  "aligned": true,
+  "timeSig": "¢",
+  "time": {
+   "num": 2,
+   "den": 2
+  },
+  "meter": "cut time (2/2)",
+  "noteValue": "eighths + sixteenth rolls",
+  "measureBeats": 4,
+  "measures": [
+   {
+    "voices": [
+     {
+      "inst": "snare",
+      "stem": "up",
+      "events": [
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.026,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.0615,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.098,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.1336,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.1792,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.2157,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.2513,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.2868,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.3385,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.372,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.4075,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.442,
+        "tie": false
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "voices": [
+     {
+      "inst": "snare",
+      "stem": "up",
+      "events": [
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.51,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.5455,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.582,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.6175,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.6632,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.6997,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.7352,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.7718,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.8225,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.856,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.8905,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.926,
+        "tie": false
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "short-roll-single-006",
+  "name": "Short Roll · 6",
+  "section": "Short Roll Combinations (Single Beat Rolls)",
+  "img": "/exercises/short-roll-single-006.png",
+  "noteY": 0.4333,
+  "aligned": true,
+  "timeSig": "¢",
+  "time": {
+   "num": 2,
+   "den": 2
+  },
+  "meter": "cut time (2/2)",
+  "noteValue": "eighths + sixteenth rolls",
+  "measureBeats": 4,
+  "measures": [
+   {
+    "voices": [
+     {
+      "inst": "snare",
+      "stem": "up",
+      "events": [
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.026,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.0615,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.098,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.1336,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.1792,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.2157,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.2513,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.2868,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.3385,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.372,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.4075,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.442,
+        "tie": false
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "voices": [
+     {
+      "inst": "snare",
+      "stem": "up",
+      "events": [
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.51,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.5455,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.582,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.6175,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.6632,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.6997,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.7352,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.7718,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.8225,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.856,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.8905,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.926,
+        "tie": false
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "short-roll-single-007",
+  "name": "Short Roll · 7",
+  "section": "Short Roll Combinations (Single Beat Rolls)",
+  "img": "/exercises/short-roll-single-007.png",
+  "noteY": 0.4333,
+  "aligned": true,
+  "timeSig": "¢",
+  "time": {
+   "num": 2,
+   "den": 2
+  },
+  "meter": "cut time (2/2)",
+  "noteValue": "eighths + sixteenth rolls",
+  "measureBeats": 4,
+  "measures": [
+   {
+    "voices": [
+     {
+      "inst": "snare",
+      "stem": "up",
+      "events": [
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.026,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.0615,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.098,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.1336,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.1792,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.2157,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.2513,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.2868,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.3385,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.372,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.4075,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.442,
+        "tie": false
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "voices": [
+     {
+      "inst": "snare",
+      "stem": "up",
+      "events": [
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.51,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.5455,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.582,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.6175,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.6632,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.6997,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.7352,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.7718,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.8225,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.856,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.8905,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.926,
+        "tie": false
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "short-roll-single-008",
+  "name": "Short Roll · 8",
+  "section": "Short Roll Combinations (Single Beat Rolls)",
+  "img": "/exercises/short-roll-single-008.png",
+  "noteY": 0.4333,
+  "aligned": true,
+  "timeSig": "¢",
+  "time": {
+   "num": 2,
+   "den": 2
+  },
+  "meter": "cut time (2/2)",
+  "noteValue": "eighths + sixteenth rolls",
+  "measureBeats": 4,
+  "measures": [
+   {
+    "voices": [
+     {
+      "inst": "snare",
+      "stem": "up",
+      "events": [
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.026,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.0615,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.098,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.1336,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.1792,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.2157,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.2513,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.2868,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.3385,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.372,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.4075,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.442,
+        "tie": false
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "voices": [
+     {
+      "inst": "snare",
+      "stem": "up",
+      "events": [
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.51,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.5455,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.582,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.6175,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.6632,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.6997,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.7352,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.7718,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.8225,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.856,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.8905,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.926,
+        "tie": false
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "short-roll-single-009",
+  "name": "Short Roll · 9",
+  "section": "Short Roll Combinations (Single Beat Rolls)",
+  "img": "/exercises/short-roll-single-009.png",
+  "noteY": 0.4333,
+  "aligned": true,
+  "timeSig": "¢",
+  "time": {
+   "num": 2,
+   "den": 2
+  },
+  "meter": "cut time (2/2)",
+  "noteValue": "eighths + sixteenth rolls",
+  "measureBeats": 4,
+  "measures": [
+   {
+    "voices": [
+     {
+      "inst": "snare",
+      "stem": "up",
+      "events": [
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.026,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.0615,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.098,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.1336,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.1792,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.2157,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.2513,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.2868,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.3385,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.372,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.4075,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.442,
+        "tie": false
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "voices": [
+     {
+      "inst": "snare",
+      "stem": "up",
+      "events": [
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.51,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.5455,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.582,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.6175,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.6632,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.6997,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.7352,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.7718,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.8225,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.856,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.8905,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.926,
+        "tie": false
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "short-roll-single-010",
+  "name": "Short Roll · 10",
+  "section": "Short Roll Combinations (Single Beat Rolls)",
+  "img": "/exercises/short-roll-single-010.png",
+  "noteY": 0.4333,
+  "aligned": true,
+  "timeSig": "¢",
+  "time": {
+   "num": 2,
+   "den": 2
+  },
+  "meter": "cut time (2/2)",
+  "noteValue": "eighths + sixteenth rolls",
+  "measureBeats": 4,
+  "measures": [
+   {
+    "voices": [
+     {
+      "inst": "snare",
+      "stem": "up",
+      "events": [
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.026,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.0615,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.098,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.1336,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.1792,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.2157,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.2513,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.2868,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.3385,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.372,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.4075,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.442,
+        "tie": false
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "voices": [
+     {
+      "inst": "snare",
+      "stem": "up",
+      "events": [
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.51,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.5455,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.582,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.6175,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.6632,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.6997,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.7352,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.7718,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.8225,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.856,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.8905,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.926,
+        "tie": false
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "short-roll-single-011",
+  "name": "Short Roll · 11",
+  "section": "Short Roll Combinations (Single Beat Rolls)",
+  "img": "/exercises/short-roll-single-011.png",
+  "noteY": 0.4333,
+  "aligned": true,
+  "timeSig": "¢",
+  "time": {
+   "num": 2,
+   "den": 2
+  },
+  "meter": "cut time (2/2)",
+  "noteValue": "eighths + sixteenth rolls",
+  "measureBeats": 4,
+  "measures": [
+   {
+    "voices": [
+     {
+      "inst": "snare",
+      "stem": "up",
+      "events": [
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.026,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.0615,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.098,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.1336,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.1792,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.2157,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.2513,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.2868,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.3385,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.372,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.4075,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.442,
+        "tie": false
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "voices": [
+     {
+      "inst": "snare",
+      "stem": "up",
+      "events": [
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.51,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.5455,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.582,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.6175,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.6632,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.6997,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.7352,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.7718,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.8225,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.856,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.8905,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.926,
+        "tie": false
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "short-roll-single-012",
+  "name": "Short Roll · 12",
+  "section": "Short Roll Combinations (Single Beat Rolls)",
+  "img": "/exercises/short-roll-single-012.png",
+  "noteY": 0.4333,
+  "aligned": true,
+  "timeSig": "¢",
+  "time": {
+   "num": 2,
+   "den": 2
+  },
+  "meter": "cut time (2/2)",
+  "noteValue": "eighths + sixteenth rolls",
+  "measureBeats": 4,
+  "measures": [
+   {
+    "voices": [
+     {
+      "inst": "snare",
+      "stem": "up",
+      "events": [
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.026,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.0615,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.098,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.1336,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.1792,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.2157,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.2513,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.2868,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.3385,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.372,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.4075,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.442,
+        "tie": false
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "voices": [
+     {
+      "inst": "snare",
+      "stem": "up",
+      "events": [
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.51,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.5455,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.582,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.6175,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.6632,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.6997,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.7352,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.7718,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.8225,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.856,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.8905,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.926,
+        "tie": false
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "short-roll-single-013",
+  "name": "Short Roll · 13",
+  "section": "Short Roll Combinations (Single Beat Rolls)",
+  "img": "/exercises/short-roll-single-013.png",
+  "noteY": 0.4333,
+  "aligned": true,
+  "timeSig": "¢",
+  "time": {
+   "num": 2,
+   "den": 2
+  },
+  "meter": "cut time (2/2)",
+  "noteValue": "eighths + sixteenth rolls",
+  "measureBeats": 4,
+  "measures": [
+   {
+    "voices": [
+     {
+      "inst": "snare",
+      "stem": "up",
+      "events": [
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.026,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.06,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.0959,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.1289,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.1716,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.2075,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.2425,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.2755,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.325,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.358,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.391,
+        "tie": false
+       },
+       {
+        "type": "rest",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "voices": [
+     {
+      "inst": "snare",
+      "stem": "up",
+      "events": [
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.4891,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.524,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.5589,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.5929,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.6356,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.6716,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.7065,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.7405,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.789,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.822,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.856,
+        "tie": false
+       },
+       {
+        "type": "rest",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "short-roll-single-014",
+  "name": "Short Roll · 14",
+  "section": "Short Roll Combinations (Single Beat Rolls)",
+  "img": "/exercises/short-roll-single-014.png",
+  "noteY": 0.4333,
+  "aligned": true,
+  "timeSig": "¢",
+  "time": {
+   "num": 2,
+   "den": 2
+  },
+  "meter": "cut time (2/2)",
+  "noteValue": "eighths + sixteenth rolls",
+  "measureBeats": 4,
+  "measures": [
+   {
+    "voices": [
+     {
+      "inst": "snare",
+      "stem": "up",
+      "events": [
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.026,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.06,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.0959,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.1289,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.1716,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.2075,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.2425,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.2755,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.325,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.358,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.391,
+        "tie": false
+       },
+       {
+        "type": "rest",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "voices": [
+     {
+      "inst": "snare",
+      "stem": "up",
+      "events": [
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.4891,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.524,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.5589,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.5929,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.6356,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.6716,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.7065,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.7405,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.789,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.822,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.856,
+        "tie": false
+       },
+       {
+        "type": "rest",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "short-roll-single-015",
+  "name": "Short Roll · 15",
+  "section": "Short Roll Combinations (Single Beat Rolls)",
+  "img": "/exercises/short-roll-single-015.png",
+  "noteY": 0.4333,
+  "aligned": true,
+  "timeSig": "¢",
+  "time": {
+   "num": 2,
+   "den": 2
+  },
+  "meter": "cut time (2/2)",
+  "noteValue": "eighths + sixteenth rolls",
+  "measureBeats": 4,
+  "measures": [
+   {
+    "voices": [
+     {
+      "inst": "snare",
+      "stem": "up",
+      "events": [
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.026,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.06,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.0959,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.1289,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.1716,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.2075,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.2425,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.2755,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.325,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.358,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.391,
+        "tie": false
+       },
+       {
+        "type": "rest",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "voices": [
+     {
+      "inst": "snare",
+      "stem": "up",
+      "events": [
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.4891,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.524,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.5589,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.5929,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.6356,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.6716,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.7065,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.7405,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.789,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.822,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.856,
+        "tie": false
+       },
+       {
+        "type": "rest",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "short-roll-single-016",
+  "name": "Short Roll · 16",
+  "section": "Short Roll Combinations (Single Beat Rolls)",
+  "img": "/exercises/short-roll-single-016.png",
+  "noteY": 0.4333,
+  "aligned": true,
+  "timeSig": "¢",
+  "time": {
+   "num": 2,
+   "den": 2
+  },
+  "meter": "cut time (2/2)",
+  "noteValue": "eighths + sixteenth rolls",
+  "measureBeats": 4,
+  "measures": [
+   {
+    "voices": [
+     {
+      "inst": "snare",
+      "stem": "up",
+      "events": [
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.026,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.06,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.0959,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.1289,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.1716,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.2075,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.2425,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.2755,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.325,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.358,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.391,
+        "tie": false
+       },
+       {
+        "type": "rest",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "voices": [
+     {
+      "inst": "snare",
+      "stem": "up",
+      "events": [
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.4891,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.524,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.5589,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.5929,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.6356,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.6716,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.7065,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.7405,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.789,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.822,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.856,
+        "tie": false
+       },
+       {
+        "type": "rest",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "short-roll-single-017",
+  "name": "Short Roll · 17",
+  "section": "Short Roll Combinations (Single Beat Rolls)",
+  "img": "/exercises/short-roll-single-017.png",
+  "noteY": 0.4333,
+  "aligned": true,
+  "timeSig": "¢",
+  "time": {
+   "num": 2,
+   "den": 2
+  },
+  "meter": "cut time (2/2)",
+  "noteValue": "eighths + sixteenth rolls",
+  "measureBeats": 4,
+  "measures": [
+   {
+    "voices": [
+     {
+      "inst": "snare",
+      "stem": "up",
+      "events": [
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.026,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.06,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.0959,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.1289,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.1716,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.2075,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.2425,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.2755,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.325,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.358,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.391,
+        "tie": false
+       },
+       {
+        "type": "rest",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "voices": [
+     {
+      "inst": "snare",
+      "stem": "up",
+      "events": [
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.4891,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.524,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.5589,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.5929,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.6356,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.6716,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.7065,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.7405,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.789,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.822,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.856,
+        "tie": false
+       },
+       {
+        "type": "rest",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "short-roll-single-018",
+  "name": "Short Roll · 18",
+  "section": "Short Roll Combinations (Single Beat Rolls)",
+  "img": "/exercises/short-roll-single-018.png",
+  "noteY": 0.4333,
+  "aligned": true,
+  "timeSig": "¢",
+  "time": {
+   "num": 2,
+   "den": 2
+  },
+  "meter": "cut time (2/2)",
+  "noteValue": "eighths + sixteenth rolls",
+  "measureBeats": 4,
+  "measures": [
+   {
+    "voices": [
+     {
+      "inst": "snare",
+      "stem": "up",
+      "events": [
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.026,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.06,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.0959,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.1289,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.1716,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.2075,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.2425,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.2755,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.325,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.358,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.391,
+        "tie": false
+       },
+       {
+        "type": "rest",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "voices": [
+     {
+      "inst": "snare",
+      "stem": "up",
+      "events": [
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.4891,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.524,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.5589,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.5929,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.6356,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.6716,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.7065,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.7405,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.789,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.822,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.856,
+        "tie": false
+       },
+       {
+        "type": "rest",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "short-roll-single-019",
+  "name": "Short Roll · 19",
+  "section": "Short Roll Combinations (Single Beat Rolls)",
+  "img": "/exercises/short-roll-single-019.png",
+  "noteY": 0.4333,
+  "aligned": true,
+  "timeSig": "¢",
+  "time": {
+   "num": 2,
+   "den": 2
+  },
+  "meter": "cut time (2/2)",
+  "noteValue": "eighths + sixteenth rolls",
+  "measureBeats": 4,
+  "measures": [
+   {
+    "voices": [
+     {
+      "inst": "snare",
+      "stem": "up",
+      "events": [
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.026,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.06,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.0959,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.1289,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.1716,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.2075,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.2425,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.2755,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.325,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.358,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.391,
+        "tie": false
+       },
+       {
+        "type": "rest",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "voices": [
+     {
+      "inst": "snare",
+      "stem": "up",
+      "events": [
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.4891,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.524,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.5589,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.5929,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.6356,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.6716,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.7065,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.7405,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.789,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.822,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.856,
+        "tie": false
+       },
+       {
+        "type": "rest",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "short-roll-single-020",
+  "name": "Short Roll · 20",
+  "section": "Short Roll Combinations (Single Beat Rolls)",
+  "img": "/exercises/short-roll-single-020.png",
+  "noteY": 0.4333,
+  "aligned": true,
+  "timeSig": "¢",
+  "time": {
+   "num": 2,
+   "den": 2
+  },
+  "meter": "cut time (2/2)",
+  "noteValue": "eighths + sixteenth rolls",
+  "measureBeats": 4,
+  "measures": [
+   {
+    "voices": [
+     {
+      "inst": "snare",
+      "stem": "up",
+      "events": [
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.026,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.06,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.0959,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.1289,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.1716,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.2075,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.2425,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.2755,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.325,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.358,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.391,
+        "tie": false
+       },
+       {
+        "type": "rest",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "voices": [
+     {
+      "inst": "snare",
+      "stem": "up",
+      "events": [
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.4891,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.524,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.5589,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.5929,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.6356,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.6716,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.7065,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.7405,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.789,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.822,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.856,
+        "tie": false
+       },
+       {
+        "type": "rest",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "short-roll-single-021",
+  "name": "Short Roll · 21",
+  "section": "Short Roll Combinations (Single Beat Rolls)",
+  "img": "/exercises/short-roll-single-021.png",
+  "noteY": 0.4333,
+  "aligned": true,
+  "timeSig": "¢",
+  "time": {
+   "num": 2,
+   "den": 2
+  },
+  "meter": "cut time (2/2)",
+  "noteValue": "eighths + sixteenth rolls",
+  "measureBeats": 4,
+  "measures": [
+   {
+    "voices": [
+     {
+      "inst": "snare",
+      "stem": "up",
+      "events": [
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.026,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.06,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.0959,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.1289,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.1716,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.2075,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.2425,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.2755,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.325,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.358,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.391,
+        "tie": false
+       },
+       {
+        "type": "rest",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "voices": [
+     {
+      "inst": "snare",
+      "stem": "up",
+      "events": [
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.4891,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.524,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.5589,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.5929,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.6356,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.6716,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.7065,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.7405,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.789,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.822,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.856,
+        "tie": false
+       },
+       {
+        "type": "rest",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "short-roll-single-022",
+  "name": "Short Roll · 22",
+  "section": "Short Roll Combinations (Single Beat Rolls)",
+  "img": "/exercises/short-roll-single-022.png",
+  "noteY": 0.4333,
+  "aligned": true,
+  "timeSig": "¢",
+  "time": {
+   "num": 2,
+   "den": 2
+  },
+  "meter": "cut time (2/2)",
+  "noteValue": "eighths + sixteenth rolls",
+  "measureBeats": 4,
+  "measures": [
+   {
+    "voices": [
+     {
+      "inst": "snare",
+      "stem": "up",
+      "events": [
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.026,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.06,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.0959,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.1289,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.1716,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.2075,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.2425,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.2755,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.325,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.358,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.391,
+        "tie": false
+       },
+       {
+        "type": "rest",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "voices": [
+     {
+      "inst": "snare",
+      "stem": "up",
+      "events": [
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.4891,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.524,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.5589,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.5929,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.6356,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.6716,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.7065,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.7405,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.789,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.822,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.856,
+        "tie": false
+       },
+       {
+        "type": "rest",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "short-roll-single-023",
+  "name": "Short Roll · 23",
+  "section": "Short Roll Combinations (Single Beat Rolls)",
+  "img": "/exercises/short-roll-single-023.png",
+  "noteY": 0.4333,
+  "aligned": true,
+  "timeSig": "¢",
+  "time": {
+   "num": 2,
+   "den": 2
+  },
+  "meter": "cut time (2/2)",
+  "noteValue": "eighths + sixteenth rolls",
+  "measureBeats": 4,
+  "measures": [
+   {
+    "voices": [
+     {
+      "inst": "snare",
+      "stem": "up",
+      "events": [
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.026,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.06,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.0959,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.1289,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.1716,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.2075,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.2425,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.2755,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.325,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.358,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.391,
+        "tie": false
+       },
+       {
+        "type": "rest",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "voices": [
+     {
+      "inst": "snare",
+      "stem": "up",
+      "events": [
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.4891,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.524,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.5589,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.5929,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.6356,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.6716,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.7065,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.7405,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.789,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.822,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.856,
+        "tie": false
+       },
+       {
+        "type": "rest",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "short-roll-single-024",
+  "name": "Short Roll · 24",
+  "section": "Short Roll Combinations (Single Beat Rolls)",
+  "img": "/exercises/short-roll-single-024.png",
+  "noteY": 0.4333,
+  "aligned": true,
+  "timeSig": "¢",
+  "time": {
+   "num": 2,
+   "den": 2
+  },
+  "meter": "cut time (2/2)",
+  "noteValue": "eighths + sixteenth rolls",
+  "measureBeats": 4,
+  "measures": [
+   {
+    "voices": [
+     {
+      "inst": "snare",
+      "stem": "up",
+      "events": [
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.026,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.06,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.0959,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.1289,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.1716,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.2075,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.2425,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.2755,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.325,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.358,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.391,
+        "tie": false
+       },
+       {
+        "type": "rest",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "voices": [
+     {
+      "inst": "snare",
+      "stem": "up",
+      "events": [
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.4891,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.524,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.5589,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.5929,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.6356,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.6716,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.7065,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.7405,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.789,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.822,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.856,
+        "tie": false
+       },
+       {
+        "type": "rest",
+        "value": "16th",
+        "dots": 0,
+        "tuplet": null
+       }
+      ]
+     }
+    ]
+   }
+  ]
  }
 ]
