@@ -1,202 +1,952 @@
-.app { min-height: 100vh; display: flex; justify-content: center; align-items: flex-start; }
+.app {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
 // overflow-x:hidden guards against any stray wide child causing a horizontal scroll on mobile
-.container { width: 100%; max-width: 760px; padding: 20px; overflow-x: hidden; }
+.container {
+  width: 100%;
+  max-width: 760px;
+  padding: 20px;
+  overflow-x: hidden;
+}
 
-.topbar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 12px; margin-bottom: 12px; }
-.brandRow { display: flex; align-items: center; gap: 8px; flex-shrink: 0; }
-.label { font-size: 11px; letter-spacing: 0.3em; text-transform: uppercase; color: var(--muted); }
-.practiced { display: flex; align-items: center; flex-wrap: wrap; justify-content: flex-end; gap: 8px 12px; min-width: 0; font-size: 12px; color: var(--muted); }
+.topbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px 12px;
+  margin-bottom: 12px;
+}
+
+.brandRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.label {
+  font-size: 11px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.practiced {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 8px 12px;
+  min-width: 0;
+  font-size: 12px;
+  color: var(--muted);
+}
+
 // long emails can't push the row wider than the screen
-.email { color: var(--muted); font-size: 12px; max-width: 46vw; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-.signOut { background: none; border: 1px solid var(--border); color: var(--muted); border-radius: 8px; padding: 4px 10px; cursor: pointer; font-size: 12px; flex-shrink: 0; }
-.mono { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; color: var(--text); }
+.email {
+  color: var(--muted);
+  font-size: 12px;
+  max-width: 46vw;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
 
-.pickerRow { display: flex; gap: 8px; margin-bottom: 12px; }
+.signOut {
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--muted);
+  border-radius: 8px;
+  padding: 4px 10px;
+  cursor: pointer;
+  font-size: 12px;
+  flex-shrink: 0;
+}
+
+.mono {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  color: var(--text);
+}
+
+.pickerRow {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+}
 
 // Topic selector: a single-choice, draggable Embla strip (no loop). Every topic is
 // selectable; topics with no exercises yet carry a "soon" badge and dim slightly.
-.topicEmbla { overflow: hidden; margin-bottom: 12px; cursor: grab; &:active { cursor: grabbing; } }
-.topicTrack { display: flex; gap: 8px; }
-.topicSlide { flex: 0 0 auto; min-width: 0; }
+.topicEmbla {
+  overflow: hidden;
+  margin-bottom: 12px;
+  cursor: grab;
+
+  &:active {
+    cursor: grabbing;
+  }
+}
+
+.topicTrack {
+  display: flex;
+  gap: 8px;
+}
+
+.topicSlide {
+  flex: 0 0 auto;
+  min-width: 0;
+}
+
 .topicChip {
-  white-space: nowrap; cursor: pointer;
-  padding: 8px 14px; border-radius: 999px; font-size: 13px; font-weight: 600;
-  background: var(--panel); color: var(--text); border: 1px solid var(--border);
-  display: flex; align-items: center; gap: 6px; transition: all 0.15s ease;
-  &.active { background: var(--panel2); border-color: var(--r); color: var(--r); }
-  &.pending { color: var(--muted); }
+  white-space: nowrap;
+  cursor: pointer;
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 600;
+  background: var(--panel);
+  color: var(--text);
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.15s ease;
+
+  &.active {
+    background: var(--panel2);
+    border-color: var(--r);
+    color: var(--r);
+  }
+
+  &.pending {
+    color: var(--muted);
+  }
 }
+
 .soon {
-  font-size: 9px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;
-  padding: 1px 6px; border-radius: 999px; background: var(--bg); color: var(--muted); border: 1px solid var(--border);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 1px 6px;
+  border-radius: 999px;
+  background: var(--bg);
+  color: var(--muted);
+  border: 1px solid var(--border);
 }
-.exPos { margin-left: 8px; font-family: ui-monospace, monospace; font-size: 12px; font-weight: 400; color: var(--muted); }
+
+.exPos {
+  margin-left: 8px;
+  font-family: ui-monospace, monospace;
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--muted);
+}
 
 // Skeleton "soon" placeholder shown in the notation box for topics not transcribed
 // yet. Min-height matches a rendered notation card so switching topics doesn't jump.
-@keyframes shimmer { 0% { background-position: 200% 0; } 100% { background-position: -200% 0; } }
+@keyframes shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+
+  100% {
+    background-position: -200% 0;
+  }
+}
+
 // Absolutely fills the notation box so the skeleton bars can't push it taller than the
 // reserved aspect-ratio height (which is what the live image occupies). Identical box → no jump.
-.skelNotation { position: absolute; inset: 0; display: flex; flex-direction: column; justify-content: center; gap: 8px; }
-.skel {
-  height: 14px; border-radius: 6px;
-  background: linear-gradient(90deg, #e6ded2 25%, #f3ede4 37%, #e6ded2 63%);
-  background-size: 200% 100%; animation: shimmer 1.5s linear infinite;
+.skelNotation {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
 }
-.skelBadge { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; }
-.soonBadge { font-size: 11px; font-weight: 800; letter-spacing: 0.18em; text-transform: uppercase; color: #fff; background: var(--r); padding: 4px 12px; border-radius: 999px; }
-.soonSub { color: #6b6258; font-size: 12px; font-weight: 600; }
+
+.skel {
+  height: 14px;
+  border-radius: 6px;
+  background: linear-gradient(90deg, #e6ded2 25%, #f3ede4 37%, #e6ded2 63%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s linear infinite;
+}
+
+.skelBadge {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.soonBadge {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #fff;
+  background: var(--r);
+  padding: 4px 12px;
+  border-radius: 999px;
+}
+
+.soonSub {
+  color: #6b6258;
+  font-size: 12px;
+  font-weight: 600;
+}
 
 // Exercise carousel: full-width Embla slides with overlaid prev/next arrows (swipe/drag too).
-.carousel { position: relative; }
-.exEmbla { overflow: hidden; cursor: grab; &:active { cursor: grabbing; } }
-.exTrack { display: flex; align-items: flex-start; }
-.exSlide { flex: 0 0 100%; min-width: 0; }
-.doneCheck {
-  position: absolute; top: 8px; right: 8px; width: 24px; height: 24px; border-radius: 50%;
-  background: var(--ok); color: var(--bg); display: flex; align-items: center; justify-content: center;
-  font-size: 14px; font-weight: 900; box-shadow: 0 1px 5px rgba(0, 0, 0, 0.35);
+.carousel {
+  position: relative;
 }
+
+.exEmbla {
+  overflow: hidden;
+  cursor: grab;
+
+  &:active {
+    cursor: grabbing;
+  }
+}
+
+.exTrack {
+  display: flex;
+  align-items: flex-start;
+}
+
+.exSlide {
+  flex: 0 0 100%;
+  min-width: 0;
+}
+
+.doneCheck {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--ok);
+  color: var(--bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 900;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.35);
+}
+
 // Windowed bullets under the carousel: a fixed run of dots centered on the current
 // exercise. Active widens, done turns green, the outermost dot shrinks when more exist.
-.exDots { display: flex; gap: 7px; align-items: center; justify-content: center; padding: 12px 2px 2px; margin-bottom: 8px; min-height: 20px; }
+.exDots {
+  display: flex;
+  gap: 7px;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 2px 2px;
+  margin-bottom: 8px;
+  min-height: 20px;
+}
+
 .exDot {
-  flex: 0 0 auto; width: 8px; height: 8px; border-radius: 50%; padding: 0; border: none; cursor: pointer;
-  background: var(--border); transition: width 0.18s ease, height 0.18s ease, background 0.18s ease;
-  &.done { background: var(--ok); }
-  &.edge { width: 5px; height: 5px; opacity: 0.55; }
-  &.active { width: 22px; height: 8px; border-radius: 4px; background: var(--r); opacity: 1; }
+  flex: 0 0 auto;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  background: var(--border);
+  transition: width 0.18s ease, height 0.18s ease, background 0.18s ease;
+
+  &.done {
+    background: var(--ok);
+  }
+
+  &.edge {
+    width: 5px;
+    height: 5px;
+    opacity: 0.55;
+  }
+
+  &.active {
+    width: 22px;
+    height: 8px;
+    border-radius: 4px;
+    background: var(--r);
+    opacity: 1;
+  }
 }
 
 // Danger zone: clear all stored practice progress for the signed-in user.
-.dangerZone { margin-top: 28px; padding-top: 16px; border-top: 1px solid var(--border); display: flex; justify-content: center; }
+.dangerZone {
+  margin-top: 28px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+  display: flex;
+  justify-content: center;
+}
+
 .resetAllBtn {
-  background: none; border: 1px solid var(--border); color: var(--muted);
-  font-size: 12px; font-weight: 600; padding: 8px 16px; border-radius: 8px; cursor: pointer;
-  &:hover { border-color: #7a2e2e; color: #d98a8a; }
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+
+  &:hover {
+    border-color: #7a2e2e;
+    color: #d98a8a;
+  }
 }
+
 .navBtn {
-  position: absolute; top: 50%; transform: translateY(-50%);
-  width: 40px; height: 40px; border-radius: 50%; cursor: pointer;
-  display: flex; align-items: center; justify-content: center;
-  font-size: 26px; line-height: 1; font-weight: 700;
-  background: var(--panel); color: var(--text); border: 1px solid var(--border);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  line-height: 1;
+  font-weight: 700;
+  background: var(--panel);
+  color: var(--text);
+  border: 1px solid var(--border);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
-  &:disabled { opacity: 0; pointer-events: none; }
-  &:active { transform: translateY(-50%) scale(0.94); }
-}
-.navPrev { left: -6px; padding-right: 3px; }
-.navNext { right: -6px; padding-left: 3px; }
 
-.select, .pickerEmpty {
-  flex: 1; border-radius: 8px; padding: 10px 12px; font-size: 14px; font-weight: 600;
-  background: var(--panel); color: var(--text); border: 1px solid var(--border); outline: none;
+  &:disabled {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  &:active {
+    transform: translateY(-50%) scale(0.94);
+  }
 }
-.pickerEmpty { color: var(--muted); font-weight: 400; display: flex; align-items: center; }
+
+.navPrev {
+  left: -6px;
+  padding-right: 3px;
+}
+
+.navNext {
+  right: -6px;
+  padding-left: 3px;
+}
+
+.select,
+.pickerEmpty {
+  flex: 1;
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-size: 14px;
+  font-weight: 600;
+  background: var(--panel);
+  color: var(--text);
+  border: 1px solid var(--border);
+  outline: none;
+}
+
+.pickerEmpty {
+  color: var(--muted);
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+}
+
 .btn {
-  padding: 0 16px; border-radius: 8px; font-size: 14px; font-weight: 600; cursor: pointer;
-  background: var(--panel); color: var(--text); border: 1px solid var(--border);
-  &.active { background: var(--panel2); }
+  padding: 0 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  background: var(--panel);
+  color: var(--text);
+  border: 1px solid var(--border);
+
+  &.active {
+    background: var(--panel2);
+  }
 }
+
 .btnGhost {
-  padding: 0 12px; border-radius: 8px; font-size: 14px; font-weight: 600; cursor: pointer;
-  background: var(--panel); color: var(--muted); border: 1px solid var(--border);
+  padding: 0 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  background: var(--panel);
+  color: var(--muted);
+  border: 1px solid var(--border);
 }
 
-.importPanel { border: 1px solid var(--border); background: var(--panel); border-radius: 12px; padding: 12px; margin-bottom: 12px; }
-.dropzone { border: 1.5px dashed var(--border); background: var(--bg); border-radius: 8px; text-align: center; cursor: pointer; padding: 22px; &.has { padding: 10px; } }
-.dropHint { color: var(--muted); font-size: 13px; }
-.thumbs { display: flex; gap: 8px; flex-wrap: wrap; justify-content: center; img { height: 54px; border-radius: 4px; } }
-.addBtn { width: 100%; margin-top: 12px; padding: 10px; border-radius: 8px; font-weight: 700; font-size: 14px; border: none; cursor: pointer; background: var(--r); color: var(--bg); &:disabled { background: var(--panel); color: var(--muted); cursor: default; } }
-.hint { font-size: 12px; margin-top: 8px; color: var(--muted); }
+.importPanel {
+  border: 1px solid var(--border);
+  background: var(--panel);
+  border-radius: 12px;
+  padding: 12px;
+  margin-bottom: 12px;
+}
 
-.empty { border: 1px solid var(--border); background: var(--panel); color: var(--muted); border-radius: 12px; padding: 40px; text-align: center; }
-.emptyTitle { font-size: 14px; font-weight: 600; color: var(--text); }
-.emptySub { font-size: 12px; margin-top: 4px; }
+.dropzone {
+  border: 1.5px dashed var(--border);
+  background: var(--bg);
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+  padding: 22px;
+
+  &.has {
+    padding: 10px;
+  }
+}
+
+.dropHint {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.thumbs {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  img {
+    height: 54px;
+    border-radius: 4px;
+  }
+}
+
+.addBtn {
+  width: 100%;
+  margin-top: 12px;
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  background: var(--r);
+  color: var(--bg);
+
+  &:disabled {
+    background: var(--panel);
+    color: var(--muted);
+    cursor: default;
+  }
+}
+
+.hint {
+  font-size: 12px;
+  margin-top: 8px;
+  color: var(--muted);
+}
+
+.empty {
+  border: 1px solid var(--border);
+  background: var(--panel);
+  color: var(--muted);
+  border-radius: 12px;
+  padding: 40px;
+  text-align: center;
+}
+
+.emptyTitle {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.emptySub {
+  font-size: 12px;
+  margin-top: 4px;
+}
 
 // min-height matches the live row (driven by the 20px time-signature) so the "soon"
 // row — whose tallest item is an 18px skeleton bar — doesn't sit shorter and shift the
 // card up. Keeps available vs. soon pixel-aligned.
-.metaRow { display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px; min-height: 24px; }
-.metaName { font-size: 14px; font-weight: 700; }
-.metaInfo { display: flex; align-items: center; gap: 8px; font-size: 12px; color: var(--muted); }
-.metaSig { font-size: 20px; color: var(--text); }
-.metaWarn { color: var(--r); }
+.metaRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  min-height: 24px;
+}
 
-.notationCard { position: relative; background: #fff; border-radius: 12px; padding: 16px; margin-bottom: 12px; }
+.metaName {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.metaInfo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.metaSig {
+  font-size: 20px;
+  color: var(--text);
+}
+
+.metaWarn {
+  color: var(--r);
+}
+
+.notationCard {
+  position: relative;
+  background: #fff;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 12px;
+}
+
 // Reserve the notation images' exact aspect (980×184) so the box height is identical
 // whether it holds a live image, an image still lazy-loading, or the "soon" skeleton.
-.notation { position: relative; width: 100%; aspect-ratio: 980 / 184; overflow: hidden; img { width: 100%; height: 100%; display: block; } }
-.dot { position: absolute; width: 4.5%; padding-bottom: 4.5%; transform: translate(-50%, -50%); border-radius: 50%; opacity: 0.42; }
+.notation {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 980 / 184;
+  overflow: hidden;
 
-.transport { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; }
-.repeatBox { display: flex; align-items: center; gap: 8px; padding: 14px 12px; border-radius: 12px; border: 1px solid var(--border); background: var(--panel); }
-.repeatLabel { font-size: 12px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted); }
-.repeatInput { width: 48px; background: transparent; outline: none; border: none; text-align: center; font-family: ui-monospace, monospace; color: var(--text); }
-.playBtn { flex: 1; padding: 14px; border-radius: 12px; font-weight: 900; font-size: 18px; border: none; cursor: pointer; background: var(--r); color: var(--bg); &:active { transform: scale(0.99); } &:disabled { opacity: 0.4; cursor: default; transform: none; } }
-.resetBtn { padding: 14px 16px; border-radius: 12px; border: 1px solid var(--border); background: var(--panel); color: var(--muted); font-weight: 600; cursor: pointer; &:disabled { opacity: 0.4; cursor: default; } }
-
-.handRow { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 16px 24px; margin-bottom: 16px; }
-.handBox { width: 64px; height: 80px; border-radius: 16px; display: flex; align-items: center; justify-content: center; font-size: 36px; font-weight: 900; border: 1px solid var(--border); }
-.drum { position: relative; width: 104px; aspect-ratio: 1418 / 1211; }
-.drumImg { display: block; width: 100%; height: 100%; user-select: none; -webkit-user-drag: none; }
-// anchor point on a stick; the dot is centered on it, the label sits just below
-.stick { position: absolute; width: 0; height: 0; }
-.bead {
-  position: absolute; left: -7px; top: -7px; width: 14px; height: 14px; border-radius: 50%;
-  background: rgba(255, 255, 255, 0.18); border: 1px solid rgba(255, 255, 255, 0.25);
+  img {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
 }
+
+.dot {
+  position: absolute;
+  width: 10px;
+  padding-bottom: 10px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  opacity: 0.42;
+}
+
+// Long Triplet combination lines (page 9): the strip is wider than the card, rendered at the
+// card's height so notes stay full size, and auto-scrolled to follow the highlight.
+.notationScroll {
+  scroll-behavior: smooth;
+}
+.notationScroll .strip {
+  position: relative;
+  height: 100%;
+  width: max-content;
+}
+.notationScroll .strip img {
+  width: auto;
+  height: 100%;
+  display: block;
+}
+
+.transport {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.repeatBox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 12px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: var(--panel);
+}
+
+.repeatLabel {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--muted);
+}
+
+.repeatInput {
+  width: 48px;
+  background: transparent;
+  outline: none;
+  border: none;
+  text-align: center;
+  font-family: ui-monospace, monospace;
+  color: var(--text);
+}
+
+.playBtn {
+  flex: 1;
+  padding: 14px;
+  border-radius: 12px;
+  font-weight: 900;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  background: var(--r);
+  color: var(--bg);
+
+  &:active {
+    transform: scale(0.99);
+  }
+
+  &:disabled {
+    opacity: 0.4;
+    cursor: default;
+    transform: none;
+  }
+}
+
+.resetBtn {
+  padding: 14px 16px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: var(--panel);
+  color: var(--muted);
+  font-weight: 600;
+  cursor: pointer;
+
+  &:disabled {
+    opacity: 0.4;
+    cursor: default;
+  }
+}
+
+.handRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 16px 24px;
+  margin-bottom: 16px;
+}
+
+.handBox {
+  width: 64px;
+  height: 80px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+  font-weight: 900;
+  border: 1px solid var(--border);
+}
+
+.drum {
+  position: relative;
+  width: 104px;
+  aspect-ratio: 1418 / 1211;
+}
+
+.drumImg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+// anchor point on a stick; the dot is centered on it, the label sits just below
+.stick {
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+.bead {
+  position: absolute;
+  left: -7px;
+  top: -7px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
 // Short blink: brightest at 0% (lands on the click), then quickly decays to dim and
 // holds there (fill forwards) so each strike reads as a brief flash, not a held light.
-.beadOn { border: none; animation: beadHit 0.22s ease-out forwards; }
-@keyframes beadHit {
-  0% { transform: scale(1.6); opacity: 1; }
-  28% { transform: scale(1); opacity: 1; }
-  100% { transform: scale(0.8); opacity: 0.1; }
+.beadOn {
+  border: none;
+  animation: beadHit 0.22s ease-out forwards;
 }
-.stickLabel {
-  position: absolute; left: -10px; top: 10px; width: 20px; text-align: center;
-  font-size: 15px; font-weight: 900; line-height: 1; text-shadow: 0 1px 3px rgba(0, 0, 0, 0.85);
-}
-.counter { text-align: center; }
-.count { font-family: ui-monospace, monospace; font-size: 30px; font-weight: 700; span { color: var(--muted); } }
-.countLabel { font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; margin-top: 4px; color: var(--muted); }
-// beat counter (1·2·3·4): the current quarter-note pulse of the bar lights up
-.beatRow { display: flex; gap: 6px; }
-.beatNum {
-  width: 26px; height: 26px; border-radius: 7px; display: flex; align-items: center; justify-content: center;
-  font-family: ui-monospace, monospace; font-size: 13px; font-weight: 700;
-  color: var(--muted); background: var(--bg); border: 1px solid var(--border); transition: background 0.08s, color 0.08s, border-color 0.08s;
-}
-.beatOn { color: var(--bg); background: var(--r); border-color: var(--r); }
 
-.card { border: 1px solid var(--border); background: var(--panel); border-radius: 12px; padding: 16px; margin-bottom: 12px; }
-.tempoHead { display: flex; justify-content: space-between; margin-bottom: 8px; font-size: 12px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted); span.val { font-family: ui-monospace, monospace; color: var(--text); } }
-.range { width: 100%; accent-color: var(--r); &:disabled { opacity: 0.4; } }
-.levels { display: flex; gap: 8px; margin-top: 12px; }
+@keyframes beadHit {
+  0% {
+    transform: scale(1.6);
+    opacity: 1;
+  }
+
+  28% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(0.8);
+    opacity: 0.1;
+  }
+}
+
+.stickLabel {
+  position: absolute;
+  left: -10px;
+  top: 10px;
+  width: 20px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 900;
+  line-height: 1;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.85);
+}
+
+.counter {
+  text-align: center;
+}
+
+.count {
+  font-family: ui-monospace, monospace;
+  font-size: 30px;
+  font-weight: 700;
+
+  span {
+    color: var(--muted);
+  }
+}
+
+.countLabel {
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-top: 4px;
+  color: var(--muted);
+}
+
+// beat counter (1·2·3·4): the current quarter-note pulse of the bar lights up
+.beatRow {
+  display: flex;
+  gap: 6px;
+}
+
+.beatNum {
+  width: 26px;
+  height: 26px;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: ui-monospace, monospace;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--muted);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  transition: background 0.08s, color 0.08s, border-color 0.08s;
+}
+
+.beatOn {
+  color: var(--bg);
+  background: var(--r);
+  border-color: var(--r);
+}
+
+.card {
+  border: 1px solid var(--border);
+  background: var(--panel);
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 12px;
+}
+
+.tempoHead {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--muted);
+
+  span.val {
+    font-family: ui-monospace, monospace;
+    color: var(--text);
+  }
+}
+
+.range {
+  width: 100%;
+  accent-color: var(--r);
+
+  &:disabled {
+    opacity: 0.4;
+  }
+}
+
+.levels {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
+
 // min-width:0 lets the equal-width buttons shrink below their content; overflow-wrap
 // lets a long label ("Intermediate") break instead of forcing the row wider than the
 // screen (which clipped "Expert" on mobile).
-.levelBtn { flex: 1; min-width: 0; overflow-wrap: anywhere; line-height: 1.2; padding: 8px 2px; border-radius: 8px; font-size: 12px; font-weight: 600; cursor: pointer; background: var(--bg); border: 1px solid var(--border); color: var(--text); span { color: var(--muted); } &.active { background: var(--panel2); border-color: var(--r); } &:disabled { opacity: 0.4; cursor: default; } }
+.levelBtn {
+  flex: 1;
+  min-width: 0;
+  overflow-wrap: anywhere;
+  line-height: 1.2;
+  padding: 8px 2px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  color: var(--text);
 
-.clickToggle { display: flex; border: 1px solid var(--border); border-radius: 12px; overflow: hidden; margin-bottom: 16px; }
-.clickBtn { flex: 1; padding: 10px 0; font-size: 14px; font-weight: 600; cursor: pointer; background: var(--panel); color: var(--muted); border: none; &.active { background: var(--panel2); color: var(--r); } &:disabled { opacity: 0.4; cursor: default; } }
+  span {
+    color: var(--muted);
+  }
 
-.progressHead { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; }
-.progressTitle { font-size: 12px; text-transform: uppercase; letter-spacing: 0.2em; color: var(--muted); }
-.doneBtn { font-size: 12px; font-weight: 700; padding: 6px 12px; border-radius: 8px; cursor: pointer; background: var(--bg); color: var(--muted); border: 1px solid var(--border); &.on { background: var(--ok); color: var(--bg); border-color: var(--ok); } &:disabled { opacity: 0.4; cursor: default; } }
-.stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; text-align: center; }
-.statNum { font-family: ui-monospace, monospace; font-size: 24px; font-weight: 700; }
-.statLabel { font-size: 10px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted); }
+  &.active {
+    background: var(--panel2);
+    border-color: var(--r);
+  }
+
+  &:disabled {
+    opacity: 0.4;
+    cursor: default;
+  }
+}
+
+.clickToggle {
+  display: flex;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+
+.clickBtn {
+  flex: 1;
+  padding: 10px 0;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  background: var(--panel);
+  color: var(--muted);
+  border: none;
+
+  &.active {
+    background: var(--panel2);
+    color: var(--r);
+  }
+
+  &:disabled {
+    opacity: 0.4;
+    cursor: default;
+  }
+}
+
+.progressHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.progressTitle {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--muted);
+}
+
+.doneBtn {
+  font-size: 12px;
+  font-weight: 700;
+  padding: 6px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  background: var(--bg);
+  color: var(--muted);
+  border: 1px solid var(--border);
+
+  &.on {
+    background: var(--ok);
+    color: var(--bg);
+    border-color: var(--ok);
+  }
+
+  &:disabled {
+    opacity: 0.4;
+    cursor: default;
+  }
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  text-align: center;
+}
+
+.statNum {
+  font-family: ui-monospace, monospace;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.statLabel {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--muted);
+}
 
 // ---- Mobile ----
 @media (max-width: 560px) {
-  .container { padding: 14px; }
+  .container {
+    padding: 14px;
+  }
+
   // The carousel arrows sit over the notation and cover the notes on a narrow screen;
   // there's no room to push them outside the card, so hide them — swiping/dragging and
   // the dots below still navigate.
-  .navBtn { display: none; }
+  .navBtn {
+    display: none;
+  }
+
   // Tighter level buttons so all five fit comfortably.
-  .levels { gap: 6px; }
-  .levelBtn { font-size: 11px; padding: 7px 1px; }
+  .levels {
+    gap: 6px;
+  }
+
+  .levelBtn {
+    font-size: 11px;
+    padding: 7px 1px;
+  }
 }

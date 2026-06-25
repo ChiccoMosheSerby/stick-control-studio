@@ -19198,5 +19198,6272 @@
     ]
    }
   ]
+ },
+ {
+  "id": "triplet-025",
+  "name": "Triplet · 25",
+  "section": "Triplets",
+  "img": "/exercises/triplet-025.png",
+  "noteY": 0.4333,
+  "aligned": true,
+  "timeSig": "¢",
+  "time": {
+   "num": 2,
+   "den": 2
+  },
+  "meter": "cut time (2/2)",
+  "noteValue": "eighths + triplets",
+  "measureBeats": 4,
+  "lines": 1,
+  "measures": [
+   {
+    "voices": [
+     {
+      "inst": "snare",
+      "stem": "up",
+      "events": [
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.017,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.0448,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.0745,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.1028,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.1283,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.148,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.1653,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.1904,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.2077,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.2269,
+        "tie": false
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "voices": [
+     {
+      "inst": "snare",
+      "stem": "up",
+      "events": [
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.2566,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.2817,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.3077,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.3323,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.367,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.3866,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.404,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.4291,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.4464,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.466,
+        "tie": false
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "voices": [
+     {
+      "inst": "snare",
+      "stem": "up",
+      "events": [
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.4952,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.5203,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.5463,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.571,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.6057,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.6253,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.6426,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.6677,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.6851,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.7047,
+        "tie": false
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "voices": [
+     {
+      "inst": "snare",
+      "stem": "up",
+      "events": [
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.7371,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.7544,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.7713,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.795,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.8156,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.8334,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.853,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.8703,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.8872,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.9119,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.9292,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.947,
+        "tie": false
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "triplet-026",
+  "name": "Triplet · 26",
+  "section": "Triplets",
+  "img": "/exercises/triplet-026.png",
+  "noteY": 0.4333,
+  "aligned": true,
+  "timeSig": "¢",
+  "time": {
+   "num": 2,
+   "den": 2
+  },
+  "meter": "cut time (2/2)",
+  "noteValue": "eighths + triplets",
+  "measureBeats": 4,
+  "lines": 1,
+  "measures": [
+   {
+    "voices": [
+     {
+      "inst": "snare",
+      "stem": "up",
+      "events": [
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.017,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.0421,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.0681,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.0932,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.1279,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.1471,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.1645,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.1896,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.2074,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.2266,
+        "tie": false
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "voices": [
+     {
+      "inst": "snare",
+      "stem": "up",
+      "events": [
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.2562,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.2813,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.3069,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.3325,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.3672,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.3864,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.4037,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.4288,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.4466,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.4662,
+        "tie": false
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "voices": [
+     {
+      "inst": "snare",
+      "stem": "up",
+      "events": [
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.4955,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.5206,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.5461,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.5717,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.6064,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.6256,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.6429,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.668,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.6859,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.7055,
+        "tie": false
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "voices": [
+     {
+      "inst": "snare",
+      "stem": "up",
+      "events": [
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.7374,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.7543,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.7712,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.795,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.8151,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.8324,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.852,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.8685,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.8854,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.9091,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.9292,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.947,
+        "tie": false
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "triplet-027",
+  "name": "Triplet · 27",
+  "section": "Triplets",
+  "img": "/exercises/triplet-027.png",
+  "noteY": 0.4333,
+  "aligned": true,
+  "timeSig": "¢",
+  "time": {
+   "num": 2,
+   "den": 2
+  },
+  "meter": "cut time (2/2)",
+  "noteValue": "eighths + triplets",
+  "measureBeats": 4,
+  "lines": 1,
+  "measures": [
+   {
+    "voices": [
+     {
+      "inst": "snare",
+      "stem": "up",
+      "events": [
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.017,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.0421,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.0681,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.0932,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.1279,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.1471,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.1645,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.1896,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.2074,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.2266,
+        "tie": false
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "voices": [
+     {
+      "inst": "snare",
+      "stem": "up",
+      "events": [
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.2562,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.2813,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.3069,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.3325,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.3672,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.3864,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.4037,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.4288,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.4466,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.4662,
+        "tie": false
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "voices": [
+     {
+      "inst": "snare",
+      "stem": "up",
+      "events": [
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.4955,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.5206,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.5461,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.5717,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.6064,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.6256,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.6429,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.668,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.6859,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.7055,
+        "tie": false
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "voices": [
+     {
+      "inst": "snare",
+      "stem": "up",
+      "events": [
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.7374,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.7543,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.7712,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.795,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.8151,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.8324,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.852,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.8685,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.8854,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.9091,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.9292,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.947,
+        "tie": false
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "triplet-028",
+  "name": "Triplet · 28",
+  "section": "Triplets",
+  "img": "/exercises/triplet-028.png",
+  "noteY": 0.4333,
+  "aligned": true,
+  "timeSig": "¢",
+  "time": {
+   "num": 2,
+   "den": 2
+  },
+  "meter": "cut time (2/2)",
+  "noteValue": "eighths + triplets",
+  "measureBeats": 4,
+  "lines": 1,
+  "measures": [
+   {
+    "voices": [
+     {
+      "inst": "snare",
+      "stem": "up",
+      "events": [
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.017,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.0421,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.0681,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.0932,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.1279,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.1471,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.1645,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.1896,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.2074,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.2266,
+        "tie": false
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "voices": [
+     {
+      "inst": "snare",
+      "stem": "up",
+      "events": [
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.2562,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.2813,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.3069,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.3325,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.3672,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.3864,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.4037,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.4288,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.4466,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.4662,
+        "tie": false
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "voices": [
+     {
+      "inst": "snare",
+      "stem": "up",
+      "events": [
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.4955,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.5206,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.5461,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.5717,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.6064,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.6256,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.6429,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.668,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.6859,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.7055,
+        "tie": false
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "voices": [
+     {
+      "inst": "snare",
+      "stem": "up",
+      "events": [
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.7374,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.7543,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.7712,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.795,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.8151,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.8324,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.852,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.8685,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.8854,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.9091,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.9292,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.947,
+        "tie": false
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "triplet-029",
+  "name": "Triplet · 29",
+  "section": "Triplets",
+  "img": "/exercises/triplet-029.png",
+  "noteY": 0.4333,
+  "aligned": true,
+  "timeSig": "¢",
+  "time": {
+   "num": 2,
+   "den": 2
+  },
+  "meter": "cut time (2/2)",
+  "noteValue": "eighths + triplets",
+  "measureBeats": 4,
+  "lines": 2,
+  "measures": [
+   {
+    "voices": [
+     {
+      "inst": "snare",
+      "stem": "up",
+      "events": [
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.0085,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.0211,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.0341,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.0464,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.0637,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.0736,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.0822,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.0948,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.1035,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.1131,
+        "tie": false
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "voices": [
+     {
+      "inst": "snare",
+      "stem": "up",
+      "events": [
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.1279,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.1404,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.1535,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.166,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.1834,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.1934,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.2021,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.2146,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.2235,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.2334,
+        "tie": false
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "voices": [
+     {
+      "inst": "snare",
+      "stem": "up",
+      "events": [
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.248,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.2605,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.2733,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.2859,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.3032,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.3128,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.3215,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.3343,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.3429,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.3527,
+        "tie": false
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "voices": [
+     {
+      "inst": "snare",
+      "stem": "up",
+      "events": [
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.3687,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.3772,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.3856,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.3975,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.4075,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.4162,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.426,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.4342,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.4427,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.4546,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.4646,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.4735,
+        "tie": false
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "voices": [
+     {
+      "inst": "snare",
+      "stem": "up",
+      "events": [
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.5085,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.5211,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.5339,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.5464,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.5638,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.5736,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.5823,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.5948,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.6035,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.6131,
+        "tie": false
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "voices": [
+     {
+      "inst": "snare",
+      "stem": "up",
+      "events": [
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.6279,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.6405,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.6533,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.6659,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.6832,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.693,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.7017,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.7143,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.723,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.7328,
+        "tie": false
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "voices": [
+     {
+      "inst": "snare",
+      "stem": "up",
+      "events": [
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.7474,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.76,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.773,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.7855,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.8029,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.8127,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.8214,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.834,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.8429,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.8527,
+        "tie": false
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "voices": [
+     {
+      "inst": "snare",
+      "stem": "up",
+      "events": [
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.8687,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.8771,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.8856,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.8974,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.9075,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.9162,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.926,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.9342,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.9427,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.9545,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.9646,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.9735,
+        "tie": false
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "triplet-030",
+  "name": "Triplet · 30",
+  "section": "Triplets",
+  "img": "/exercises/triplet-030.png",
+  "noteY": 0.4333,
+  "aligned": true,
+  "timeSig": "¢",
+  "time": {
+   "num": 2,
+   "den": 2
+  },
+  "meter": "cut time (2/2)",
+  "noteValue": "eighths + triplets",
+  "measureBeats": 4,
+  "lines": 2,
+  "measures": [
+   {
+    "voices": [
+     {
+      "inst": "snare",
+      "stem": "up",
+      "events": [
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.0085,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.0211,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.0341,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.0464,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.0637,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.0736,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.0822,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.0948,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.1035,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.1131,
+        "tie": false
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "voices": [
+     {
+      "inst": "snare",
+      "stem": "up",
+      "events": [
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.1279,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.1404,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.1535,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.166,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.1834,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.1934,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.2021,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.2146,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.2235,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.2334,
+        "tie": false
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "voices": [
+     {
+      "inst": "snare",
+      "stem": "up",
+      "events": [
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.248,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.2605,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.2733,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.2859,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.3032,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.3128,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.3215,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.3343,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.3429,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.3527,
+        "tie": false
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "voices": [
+     {
+      "inst": "snare",
+      "stem": "up",
+      "events": [
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.3687,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.3772,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.3856,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.3975,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.4075,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.4162,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.426,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.4342,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.4427,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.4546,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.4646,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.4735,
+        "tie": false
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "voices": [
+     {
+      "inst": "snare",
+      "stem": "up",
+      "events": [
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.5085,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.5211,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.5339,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.5464,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.5638,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.5736,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.5823,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.5948,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.6035,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.6131,
+        "tie": false
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "voices": [
+     {
+      "inst": "snare",
+      "stem": "up",
+      "events": [
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.6279,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.6405,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.6533,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.6661,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.6834,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.693,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.7017,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.7143,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.7232,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.733,
+        "tie": false
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "voices": [
+     {
+      "inst": "snare",
+      "stem": "up",
+      "events": [
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.7476,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.7602,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.773,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.7855,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.8027,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.8125,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.8209,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.8335,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.8424,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.852,
+        "tie": false
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "voices": [
+     {
+      "inst": "snare",
+      "stem": "up",
+      "events": [
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.8682,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.8767,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.8851,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.8968,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.907,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.9157,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.9258,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.934,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.9424,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.9543,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.9644,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.9735,
+        "tie": false
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "triplet-031",
+  "name": "Triplet · 31",
+  "section": "Triplets",
+  "img": "/exercises/triplet-031.png",
+  "noteY": 0.4333,
+  "aligned": true,
+  "timeSig": "¢",
+  "time": {
+   "num": 2,
+   "den": 2
+  },
+  "meter": "cut time (2/2)",
+  "noteValue": "eighths + triplets",
+  "measureBeats": 4,
+  "lines": 2,
+  "measures": [
+   {
+    "voices": [
+     {
+      "inst": "snare",
+      "stem": "up",
+      "events": [
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.0085,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.0211,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.0341,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.0466,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.064,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.0736,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.0822,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.0948,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.1037,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.1133,
+        "tie": false
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "voices": [
+     {
+      "inst": "snare",
+      "stem": "up",
+      "events": [
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.1281,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.1407,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.1535,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.1662,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.1836,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.1934,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.2021,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.2146,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.2235,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.2334,
+        "tie": false
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "voices": [
+     {
+      "inst": "snare",
+      "stem": "up",
+      "events": [
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.248,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.2605,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.2733,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.2861,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.3034,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.3128,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.3215,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.3343,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.3432,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.3527,
+        "tie": false
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "voices": [
+     {
+      "inst": "snare",
+      "stem": "up",
+      "events": [
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.3689,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.3774,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.3856,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.3975,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.4075,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.4162,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.4262,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.4345,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.4427,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.4546,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.4646,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.4735,
+        "tie": false
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "voices": [
+     {
+      "inst": "snare",
+      "stem": "up",
+      "events": [
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.5085,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.5211,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.5339,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.5464,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.5638,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.5734,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.582,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.5946,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.6035,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.6129,
+        "tie": false
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "voices": [
+     {
+      "inst": "snare",
+      "stem": "up",
+      "events": [
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.6277,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.6403,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.6533,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.6659,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.6832,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.6933,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.7019,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.7145,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.7234,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.7332,
+        "tie": false
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "voices": [
+     {
+      "inst": "snare",
+      "stem": "up",
+      "events": [
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.7479,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.7604,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.7732,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.7858,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.8031,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.8127,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.8214,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.8342,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.8429,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.8527,
+        "tie": false
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "voices": [
+     {
+      "inst": "snare",
+      "stem": "up",
+      "events": [
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.8687,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.8771,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.8856,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.8974,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.9075,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.9162,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.926,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.9342,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.9427,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.9545,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.9646,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.9735,
+        "tie": false
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "triplet-032",
+  "name": "Triplet · 32",
+  "section": "Triplets",
+  "img": "/exercises/triplet-032.png",
+  "noteY": 0.4333,
+  "aligned": true,
+  "timeSig": "¢",
+  "time": {
+   "num": 2,
+   "den": 2
+  },
+  "meter": "cut time (2/2)",
+  "noteValue": "eighths + triplets",
+  "measureBeats": 4,
+  "lines": 1,
+  "measures": [
+   {
+    "voices": [
+     {
+      "inst": "snare",
+      "stem": "up",
+      "events": [
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.017,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.0421,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.0681,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.0932,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.1279,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.1471,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.1645,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.1896,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.2074,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.2266,
+        "tie": false
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "voices": [
+     {
+      "inst": "snare",
+      "stem": "up",
+      "events": [
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.2562,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.2813,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.3069,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.3325,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.3672,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.3864,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.4037,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.4288,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.4466,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.4662,
+        "tie": false
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "voices": [
+     {
+      "inst": "snare",
+      "stem": "up",
+      "events": [
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.4955,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.5206,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.5461,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.5717,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.6064,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.6256,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.6429,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.668,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.6859,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.7055,
+        "tie": false
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "voices": [
+     {
+      "inst": "snare",
+      "stem": "up",
+      "events": [
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.7374,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.7543,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.7712,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.795,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.8151,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.8324,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.852,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.8685,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.8854,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.9091,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.9292,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.947,
+        "tie": false
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "triplet-033",
+  "name": "Triplet · 33",
+  "section": "Triplets",
+  "img": "/exercises/triplet-033.png",
+  "noteY": 0.4333,
+  "aligned": true,
+  "timeSig": "¢",
+  "time": {
+   "num": 2,
+   "den": 2
+  },
+  "meter": "cut time (2/2)",
+  "noteValue": "eighths + triplets",
+  "measureBeats": 4,
+  "lines": 1,
+  "measures": [
+   {
+    "voices": [
+     {
+      "inst": "snare",
+      "stem": "up",
+      "events": [
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.017,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.0421,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.0681,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.0932,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.1279,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.1471,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.1645,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.1896,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.2074,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.2266,
+        "tie": false
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "voices": [
+     {
+      "inst": "snare",
+      "stem": "up",
+      "events": [
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.2562,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.2813,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.3069,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.3325,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.3672,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.3854,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.4051,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.4302,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.4484,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.4662,
+        "tie": false
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "voices": [
+     {
+      "inst": "snare",
+      "stem": "up",
+      "events": [
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "L",
+        "x": 0.4955,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.5206,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.5461,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": null,
+        "hand": "R",
+        "x": 0.5717,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.6064,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.6256,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.6429,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.668,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.6859,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.7055,
+        "tie": false
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "voices": [
+     {
+      "inst": "snare",
+      "stem": "up",
+      "events": [
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.7374,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.7543,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.7712,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.795,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.8151,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.8324,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.852,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.8685,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.8854,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.9091,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "L",
+        "x": 0.9292,
+        "tie": false
+       },
+       {
+        "type": "note",
+        "value": "eighth",
+        "dots": 0,
+        "tuplet": {
+         "n": 3,
+         "of": 2
+        },
+        "hand": "R",
+        "x": 0.947,
+        "tie": false
+       }
+      ]
+     }
+    ]
+   }
+  ]
  }
 ]
