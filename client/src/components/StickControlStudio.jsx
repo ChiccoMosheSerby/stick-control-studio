@@ -33,6 +33,8 @@ export default function StickControlStudio() {
   const [subClicks, setSubClicks] = useState(() => loadSettings().subClicks ?? true);
   const [volume, setVolume] = useState(() => loadSettings().volume ?? 0.8);
   const [playing, setPlaying] = useState(false);
+  const [demoing, setDemoing] = useState(false);        // preview playback: sound+visual, not counted
+  const [advanceToken, setAdvanceToken] = useState(0);  // bump -> carousel advances to the next exercise
   const [cur, setCur] = useState(-1);
   const [reps, setReps] = useState(0);
   const [progress, setProgress] = useState({});
@@ -61,6 +63,8 @@ export default function StickControlStudio() {
   const doneIds = new Set(Object.keys(progress).filter((k) => progress[k]?.done));  // for the ✓ on done exercises
 
   const playerRef = useRef(null), measRef = useRef(0), accRef = useRef(0);
+  const demoRef = useRef(false), resumeRef = useRef(false), exListRef = useRef([]);
+  exListRef.current = topicExercises;   // current topic's exercises, for auto-advance order
   const tempoRef = useRef(76), repRef = useRef(20), subRef = useRef(true), volRef = useRef(0.8), selRef = useRef(null);
   useEffect(() => { tempoRef.current = tempo; }, [tempo]);
   useEffect(() => { repRef.current = repeats; }, [repeats]);
@@ -93,18 +97,19 @@ export default function StickControlStudio() {
     return () => clearTimeout(t);
   }, [progress, loaded]);
 
-  // count practice time while playing
+  // count practice time while playing — but NOT during a demo (preview shouldn't bank time)
   useEffect(() => {
-    if (!playing) return;
+    if (!playing || demoing) return;
     const t = setInterval(() => {
       setTotalSec((s2) => s2 + 1);
       setProgress((p) => { const id = selRef.current, c = p[id] || BLANK; return { ...p, [id]: { ...c, sec: (c.sec || 0) + 1 } }; });
     }, 1000);
     return () => clearInterval(t);
-  }, [playing]);
+  }, [playing, demoing]);
 
   // ---- audio engine (durations drive timing; see lib/player.js) ----
   const credit = () => {
+    if (demoRef.current) return;   // a demo never banks reps/progress
     const did = measRef.current - accRef.current; if (did <= 0) return; accRef.current = measRef.current; const id = selRef.current;
     setProgress((p) => { const c = p[id] || BLANK; return { ...p, [id]: { ...c, reps: (c.reps || 0) + did, bestTempo: Math.max(c.bestTempo || 0, tempoRef.current), done: c.done || measRef.current >= repRef.current } }; });
   };
@@ -112,19 +117,46 @@ export default function StickControlStudio() {
     if (playerRef.current) return playerRef.current;
     playerRef.current = createPlayer({
       getTempo: () => tempoRef.current,
-      getRepeats: () => repRef.current,
+      getRepeats: () => (demoRef.current ? 1 : repRef.current),   // demo plays a single pass
       getEveryNote: () => subRef.current,
       getVolume: () => volRef.current,
       onNote: (idx) => setCur(idx),
       onRepeat: (m) => { measRef.current = m; setReps(m); },
-      onFinish: () => { setPlaying(false); credit(); setCur(-1); measRef.current = 0; accRef.current = 0; setReps(repRef.current); }
+      onFinish: () => {
+        if (playerRef.current) playerRef.current.reset();
+        if (demoRef.current) {   // preview done: clean up, count nothing
+          demoRef.current = false; setDemoing(false); setPlaying(false); setCur(-1);
+          measRef.current = 0; accRef.current = 0; setReps(0); return;
+        }
+        credit();                                  // bank the completed reps + mark done
+        measRef.current = 0; accRef.current = 0; setCur(-1);
+        const list = exListRef.current, i = list.findIndex((e) => e.id === selRef.current);
+        if (i >= 0 && i < list.length - 1) {       // auto-advance to the next exercise and keep playing
+          resumeRef.current = true; setReps(0); setAdvanceToken((t) => t + 1);
+        } else {                                    // last exercise in the topic: stop on a full count
+          setPlaying(false); setReps(repRef.current);
+        }
+      }
     });
     return playerRef.current;
   };
-  const play = async () => { const e = library.find((x) => x.id === selRef.current); if (!e) return; setPlaying(true); await ensurePlayer().play(flatten(e)); };
-  const pause = () => { setPlaying(false); if (playerRef.current) playerRef.current.stop(); credit(); };  // bank partial reps on pause
+  const play = async () => { const e = library.find((x) => x.id === selRef.current); if (!e) return; demoRef.current = false; setDemoing(false); setPlaying(true); await ensurePlayer().play(flatten(e)); };
+  const demo = async () => {   // preview: hear + see the exercise once, nothing counted
+    const e = library.find((x) => x.id === selRef.current); if (!e) return;
+    if (playerRef.current) playerRef.current.reset();
+    measRef.current = 0; accRef.current = 0; resumeRef.current = false; setReps(0);
+    demoRef.current = true; setDemoing(true); setPlaying(true);
+    await ensurePlayer().play(flatten(e));
+  };
+  const pause = () => {
+    if (playerRef.current) playerRef.current.stop();
+    if (demoRef.current) { demoRef.current = false; setDemoing(false); setPlaying(false); setCur(-1); measRef.current = 0; accRef.current = 0; setReps(0); return; }
+    setPlaying(false); credit();   // bank partial reps on pause
+  };
   const reset = () => { pause(); if (playerRef.current) playerRef.current.reset(); measRef.current = 0; accRef.current = 0; setCur(-1); setReps(0); };
   const pickExercise = useCallback((id) => { reset(); setSelId(id); }, []);
+  // after an auto-advance lands on the next exercise, resume playback there
+  useEffect(() => { if (resumeRef.current) { resumeRef.current = false; play(); } }, [selId]);
   const pickTopic = (id) => {
     if (id === topicId) return;
     reset(); setTopicId(id);
@@ -193,6 +225,7 @@ export default function StickControlStudio() {
                 currentId={selId}
                 onPick={pickExercise}
                 doneIds={doneIds}
+                advanceToken={advanceToken}
                 live={{ cn, showNote, col, totalQ }}
               />
             : <>
@@ -224,8 +257,10 @@ export default function StickControlStudio() {
               <input className={s.repeatInput} type="number" min={1} value={repeats} disabled={!available} onChange={(e) => setRepeats(Math.max(1, +e.target.value))} />
               <span className={s.repeatLabel}>×</span>
             </div>
-            <button className={s.playBtn} onClick={playing ? pause : play} disabled={!available}>{playing ? "Pause" : (reps > 0 ? "Resume" : "Play")}</button>
-            <button className={s.resetBtn} onClick={reset} disabled={!available}>Reset</button>
+            <button className={s.playBtn} onClick={(playing && !demoing) ? pause : play} disabled={!available || demoing}>{(playing && !demoing) ? "Pause" : (reps > 0 ? "Resume" : "Play")}</button>
+            <button className={s.demoBtn} onClick={demoing ? pause : demo} disabled={!available || (playing && !demoing)}
+              title="Preview — hear and watch this exercise once (not counted toward progress)">{demoing ? "Stop" : "Demo"}</button>
+            <button className={s.resetBtn} onClick={reset} disabled={!available || demoing}>Reset</button>
           </div>
 
           <div className={s.handRow}>
@@ -299,11 +334,12 @@ export default function StickControlStudio() {
 // One topic's exercises as a swipeable Embla carousel (same engine as ketolog).
 // Full-width slides; swipe / drag / arrows move between exercises, no wrap-around.
 // Remounted per topic (keyed by topic.id), so it always starts on the first exercise.
-function ExerciseCarousel({ exercises, currentId, onPick, doneIds, live }) {
+function ExerciseCarousel({ exercises, currentId, onPick, doneIds, advanceToken, live }) {
   const [emblaRef, emblaApi] = useEmblaCarousel({ align: "center", loop: false }, [WheelGesturesPlugin()]);
   const [sel, setSel] = useState(0);
   const exRef = useRef(exercises); exRef.current = exercises;   // stable across re-renders
   const pickRef = useRef(onPick); pickRef.current = onPick;
+  const tokRef = useRef(advanceToken);                          // last-seen advance token
 
   useEffect(() => {
     if (!emblaApi) return;
@@ -316,6 +352,12 @@ function ExerciseCarousel({ exercises, currentId, onPick, doneIds, live }) {
     emblaApi.on("select", onSelect);
     return () => emblaApi.off("select", onSelect);
   }, [emblaApi]);
+
+  // auto-advance: when the parent bumps advanceToken (an exercise hit its repeat count),
+  // glide to the next exercise. Guard on a real change so topic re-mounts don't advance.
+  useEffect(() => {
+    if (advanceToken !== tokRef.current) { tokRef.current = advanceToken; if (emblaApi) emblaApi.scrollNext(); }
+  }, [advanceToken, emblaApi]);
 
   const ex = exercises[sel] || exercises[0];
 

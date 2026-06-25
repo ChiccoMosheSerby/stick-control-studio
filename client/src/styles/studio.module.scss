@@ -573,6 +573,7 @@
 .transport {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;          // narrow screens: Demo/Reset drop to a second line, no overflow
   gap: 12px;
   margin-bottom: 16px;
 }
@@ -580,6 +581,7 @@
 .repeatBox {
   display: flex;
   align-items: center;
+  flex-shrink: 0;
   gap: 8px;
   padding: 14px 12px;
   border-radius: 12px;
@@ -605,7 +607,7 @@
 }
 
 .playBtn {
-  flex: 1;
+  flex: 1 1 140px;          // stays prominent; wraps Demo/Reset below it when space is tight
   padding: 14px;
   border-radius: 12px;
   font-weight: 900;
@@ -626,7 +628,29 @@
   }
 }
 
+.demoBtn {
+  flex-shrink: 0;
+  padding: 14px 16px;
+  border-radius: 12px;
+  border: 1px solid #4FB0A5;
+  background: var(--panel);
+  color: #4FB0A5;
+  font-weight: 700;
+  cursor: pointer;
+
+  &:active {
+    transform: scale(0.99);
+  }
+
+  &:disabled {
+    opacity: 0.4;
+    cursor: default;
+    transform: none;
+  }
+}
+
 .resetBtn {
+  flex-shrink: 0;
   padding: 14px 16px;
   border-radius: 12px;
   border: 1px solid var(--border);
