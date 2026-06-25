@@ -14,11 +14,15 @@ const st = {
   btn: { width: "100%", padding: "12px", borderRadius: 10, border: 0, background: C.R, color: C.bg, fontSize: 15, fontWeight: 700, cursor: "pointer" },
   link: { background: "none", border: 0, color: C.muted, cursor: "pointer", fontSize: 13, padding: 4 },
   row: { display: "flex", justifyContent: "space-between", alignItems: "center", marginTop: 14 },
-  msg: (c) => ({ fontSize: 13, color: c, margin: "0 0 12px" })
+  msg: (c) => ({ fontSize: 13, color: c, margin: "0 0 12px" }),
+  divider: { display: "flex", alignItems: "center", gap: 10, color: C.muted, fontSize: 12, margin: "20px 0 14px" },
+  rule: { flex: 1, height: 1, background: C.border },
+  ghostBtn: { width: "100%", padding: "12px", borderRadius: 10, border: `1px solid ${C.border}`, background: "transparent", color: C.text, fontSize: 15, fontWeight: 600, cursor: "pointer" },
+  hint: { fontSize: 12, color: C.muted, textAlign: "center", margin: "8px 0 0" }
 };
 
 export default function Login() {
-  const { login, register } = useAuth();
+  const { login, register, loginVisitor } = useAuth();
   const [mode, setMode] = useState("login");   // 'login' | 'register' | 'forgot'
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -77,6 +81,12 @@ export default function Login() {
             ? <button type="button" style={st.link} onClick={() => swap("forgot")}>Forgot password?</button>
             : <button type="button" style={st.link} onClick={() => swap("login")}>Back to sign in</button>}
         </div>
+
+        {mode !== "forgot" && (<>
+          <div style={st.divider}><span style={st.rule} />or<span style={st.rule} /></div>
+          <button type="button" style={st.ghostBtn} onClick={loginVisitor}>Continue as a visitor</button>
+          <p style={st.hint}>No account — progress is saved on this device only.</p>
+        </>)}
       </form>
     </div>
   );

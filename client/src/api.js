@@ -5,6 +5,16 @@
 // Prod: set VITE_API_URL to the deployed API origin (same origin in single-service deploy).
 const BASE = import.meta.env.VITE_API_URL ?? "";
 const TOKEN_KEY = "stickcontrol:token";
+const VISITOR_KEY = "stickcontrol:visitor";
+const GUEST_PROGRESS_KEY = "stickcontrol:guestProgress";
+
+// Visitor (guest) mode: no account, no server, no DB. Progress lives in localStorage on
+// this device only. The flag is persisted so a guest stays signed in across reloads.
+export function isVisitor() { try { return localStorage.getItem(VISITOR_KEY) === "1"; } catch { return false; } }
+export function setVisitor(on) { try { on ? localStorage.setItem(VISITOR_KEY, "1") : localStorage.removeItem(VISITOR_KEY); } catch {} }
+const loadGuestProgress = () => { try { return JSON.parse(localStorage.getItem(GUEST_PROGRESS_KEY)) || {}; } catch { return {}; } };
+const saveGuestProgress = (map) => { try { localStorage.setItem(GUEST_PROGRESS_KEY, JSON.stringify(map || {})); } catch {} return { ok: true }; };
+const clearGuestProgress = () => { try { localStorage.removeItem(GUEST_PROGRESS_KEY); } catch {} return { ok: true }; };
 
 // "Remember me" -> localStorage (survives browser restart).
 // Otherwise -> sessionStorage (cleared when the browser/tab closes).
@@ -47,8 +57,9 @@ export const api = {
     return r.ok ? r.json() : [];
   },
 
-  // per-user progress (requires auth).
-  getProgress: () => request("GET", "/progress"),
-  saveProgress: (map) => request("PUT", "/progress", map),
-  resetProgress: () => request("DELETE", "/progress")
+  // per-user progress. Signed-in users hit the API; visitors read/write localStorage
+  // only (nothing reaches the server/DB).
+  getProgress: () => isVisitor() ? Promise.resolve(loadGuestProgress()) : request("GET", "/progress"),
+  saveProgress: (map) => isVisitor() ? Promise.resolve(saveGuestProgress(map)) : request("PUT", "/progress", map),
+  resetProgress: () => isVisitor() ? Promise.resolve(clearGuestProgress()) : request("DELETE", "/progress")
 };

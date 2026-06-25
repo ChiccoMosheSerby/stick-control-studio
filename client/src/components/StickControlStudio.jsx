@@ -191,8 +191,8 @@ export default function StickControlStudio() {
           <div className={s.practiced}>
             <span>Practiced <span className={s.mono}>{fmt(totalSec)}</span></span>
             {user && (<>
-              <span className={s.email}>{user.email}</span>
-              <button className={s.signOut} onClick={() => { reset(); logout(); }}>Sign out</button>
+              <span className={s.email}>{user.visitor ? "Visitor" : user.email}</span>
+              <button className={s.signOut} onClick={() => { reset(); logout(); }}>{user.visitor ? "Exit" : "Sign out"}</button>
             </>)}
           </div>
         </div>
