@@ -402,21 +402,25 @@ function ExerciseCarousel({ exercises, currentId, onPick, doneIds, advanceToken,
             ))}
           </div>
         </div>
-        <button className={`${s.navBtn} ${s.navPrev}`} disabled={sel <= 0}
-          onClick={() => emblaApi && emblaApi.scrollPrev()} aria-label="Previous exercise">‹</button>
-        <button className={`${s.navBtn} ${s.navNext}`} disabled={sel >= exercises.length - 1}
-          onClick={() => emblaApi && emblaApi.scrollNext()} aria-label="Next exercise">›</button>
       </div>
 
-      <div className={s.exDots}>
-        {window.map((i) => {
-          const edge = (i === start && start > 0) || (i === start + W - 1 && start + W < total);
-          return (
-            <button key={i} aria-label={`Go to exercise ${i + 1}`}
-              className={`${s.exDot} ${i === sel ? s.active : ""} ${doneIds.has(exercises[i].id) ? s.done : ""} ${edge ? s.edge : ""}`}
-              onClick={() => emblaApi && emblaApi.scrollTo(i)} />
-          );
-        })}
+      {/* Explicit prev/next so it's obvious there are more exercises (mobile + desktop).
+          Dimmed (not hidden) at the ends so the control is always discoverable. */}
+      <div className={s.navRow}>
+        <button className={s.navStep} disabled={sel <= 0}
+          onClick={() => emblaApi && emblaApi.scrollPrev()} aria-label="Previous exercise">‹ Prev</button>
+        <div className={s.exDots}>
+          {window.map((i) => {
+            const edge = (i === start && start > 0) || (i === start + W - 1 && start + W < total);
+            return (
+              <button key={i} aria-label={`Go to exercise ${i + 1}`}
+                className={`${s.exDot} ${i === sel ? s.active : ""} ${doneIds.has(exercises[i].id) ? s.done : ""} ${edge ? s.edge : ""}`}
+                onClick={() => emblaApi && emblaApi.scrollTo(i)} />
+            );
+          })}
+        </div>
+        <button className={s.navStep} disabled={sel >= total - 1}
+          onClick={() => emblaApi && emblaApi.scrollNext()} aria-label="Next exercise">Next ›</button>
       </div>
     </>
   );

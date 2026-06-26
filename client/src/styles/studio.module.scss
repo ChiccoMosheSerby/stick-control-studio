@@ -246,15 +246,45 @@
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.35);
 }
 
-// Windowed bullets under the carousel: a fixed run of dots centered on the current
+// Prev / dots / Next navigation under the carousel — makes it obvious there are more
+// exercises on both mobile and desktop.
+.navRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 12px 0 8px;
+}
+
+.navStep {
+  flex-shrink: 0;
+  padding: 8px 14px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--panel);
+  color: var(--text);
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+
+  &:active {
+    transform: scale(0.97);
+  }
+
+  &:disabled {        // dimmed, not hidden, so the control stays discoverable at the ends
+    opacity: 0.32;
+    cursor: default;
+    transform: none;
+  }
+}
+
+// Windowed bullets between Prev/Next: a fixed run of dots centered on the current
 // exercise. Active widens, done turns green, the outermost dot shrinks when more exist.
 .exDots {
+  flex: 1;
   display: flex;
   gap: 7px;
   align-items: center;
   justify-content: center;
-  padding: 12px 2px 2px;
-  margin-bottom: 8px;
   min-height: 20px;
 }
 
@@ -313,44 +343,6 @@
   }
 }
 
-.navBtn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 26px;
-  line-height: 1;
-  font-weight: 700;
-  background: var(--panel);
-  color: var(--text);
-  border: 1px solid var(--border);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
-
-  &:disabled {
-    opacity: 0;
-    pointer-events: none;
-  }
-
-  &:active {
-    transform: translateY(-50%) scale(0.94);
-  }
-}
-
-.navPrev {
-  left: -6px;
-  padding-right: 3px;
-}
-
-.navNext {
-  right: -6px;
-  padding-left: 3px;
-}
 
 .select,
 .pickerEmpty {
