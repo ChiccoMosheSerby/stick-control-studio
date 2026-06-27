@@ -53,6 +53,16 @@ export default function StickControlStudio() {
   // draggable topic strip (Embla — mirrors the ketolog carousel: drag on mouse/touch,
   // WheelGestures adds two-finger trackpad swipe)
   const [topicRef, topicApi] = useEmblaCarousel({ align: "start", dragFree: true, containScroll: "trimSnaps" }, [WheelGesturesPlugin()]);
+  // Which way the strip can still scroll — drives the edge fades + arrow buttons so it's
+  // obvious there are more topics off-screen (the strip is 15 topics wide).
+  const [topicEdges, setTopicEdges] = useState({ left: false, right: false });
+  useEffect(() => {
+    if (!topicApi) return;
+    const sync = () => setTopicEdges({ left: topicApi.canScrollPrev(), right: topicApi.canScrollNext() });
+    sync();
+    topicApi.on("select", sync).on("scroll", sync).on("reInit", sync);
+    return () => { topicApi.off("select", sync).off("scroll", sync).off("reInit", sync); };
+  }, [topicApi]);
 
   const ex = library.find((e) => e.id === selId);
   const flat = ex ? flatten(ex) : [];
@@ -109,10 +119,13 @@ export default function StickControlStudio() {
   }, [playing, demoing]);
 
   // ---- audio engine (durations drive timing; see lib/player.js) ----
-  const credit = () => {
+  // `completed` is true only on a full run-through (onFinish): the player schedules the
+  // final repeat slightly ahead of what's drawn, so measRef can't be trusted to have
+  // reached the target here — onFinish firing IS the authoritative "all repeats done".
+  const credit = (completed = false) => {
     if (demoRef.current) return;   // a demo never banks reps/progress
     const did = measRef.current - accRef.current; if (did <= 0) return; accRef.current = measRef.current; const id = selRef.current;
-    setProgress((p) => { const c = p[id] || BLANK; return { ...p, [id]: { ...c, reps: (c.reps || 0) + did, bestTempo: Math.max(c.bestTempo || 0, tempoRef.current), done: c.done || measRef.current >= repRef.current } }; });
+    setProgress((p) => { const c = p[id] || BLANK; return { ...p, [id]: { ...c, reps: (c.reps || 0) + did, bestTempo: Math.max(c.bestTempo || 0, tempoRef.current), done: c.done || completed } }; });
   };
   const ensurePlayer = () => {
     if (playerRef.current) return playerRef.current;
@@ -131,7 +144,8 @@ export default function StickControlStudio() {
           demoRef.current = false; setDemoing(false); setPlaying(false); setCur(-1);
           measRef.current = 0; accRef.current = 0; setReps(0); return null;
         }
-        credit();                                  // bank the completed reps + mark done
+        measRef.current = repRef.current;          // a full run = exactly the target repeats
+        credit(true);                              // bank the completed reps + mark done
         const list = exListRef.current, i = list.findIndex((e) => e.id === selRef.current);
         if (i >= 0 && i < list.length - 1) {       // hand off to the next exercise, in time
           const next = list[i + 1];
@@ -205,17 +219,30 @@ export default function StickControlStudio() {
         </div>
 
         {library.length > 0
-          ? <div className={s.topicEmbla} ref={topicRef}>
-              <div className={s.topicTrack}>
-                {TOPICS.map((t) => (
-                  <div className={s.topicSlide} key={t.id}>
-                    <button type="button"
-                      className={`${s.topicChip} ${t.id === topicId ? s.active : ""} ${hasEx(t.section) ? "" : s.pending}`}
-                      onClick={() => pickTopic(t.id)} title={t.name}>
-                      {t.name}{!hasEx(t.section) && <span className={s.soon}>soon</span>}
-                    </button>
+          ? <div className={s.topicSection}>
+              <div className={s.topicHead}>
+                <span className={s.topicHeadLabel}>Topics</span>
+                {topic && <span className={s.topicHeadCount}>{TOPICS.findIndex((t) => t.id === topicId) + 1} <span>/ {TOPICS.length}</span></span>}
+              </div>
+              <div className={s.topicStrip}>
+                <button type="button" className={`${s.topicArrow} ${s.topicArrowL}`} aria-label="Scroll topics left"
+                  disabled={!topicEdges.left} onClick={() => topicApi && topicApi.scrollPrev()}>‹</button>
+                {/* fade masks on whichever side has more content -> clear "swipe for more" affordance */}
+                <div className={`${s.topicEmbla} ${topicEdges.left ? s.fadeL : ""} ${topicEdges.right ? s.fadeR : ""}`} ref={topicRef}>
+                  <div className={s.topicTrack}>
+                    {TOPICS.map((t) => (
+                      <div className={s.topicSlide} key={t.id}>
+                        <button type="button"
+                          className={`${s.topicChip} ${t.id === topicId ? s.active : ""} ${hasEx(t.section) ? "" : s.pending}`}
+                          onClick={() => pickTopic(t.id)} title={t.name} aria-pressed={t.id === topicId}>
+                          {t.name}{!hasEx(t.section) && <span className={s.soon}>soon</span>}
+                        </button>
+                      </div>
+                    ))}
                   </div>
-                ))}
+                </div>
+                <button type="button" className={`${s.topicArrow} ${s.topicArrowR}`} aria-label="Scroll topics right"
+                  disabled={!topicEdges.right} onClick={() => topicApi && topicApi.scrollNext()}>›</button>
               </div>
             </div>
           : <div className={s.pickerEmpty}>{loaded ? "No exercises found" : "Loading…"}</div>}

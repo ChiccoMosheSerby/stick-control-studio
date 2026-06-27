@@ -81,13 +81,103 @@
 
 // Topic selector: a single-choice, draggable Embla strip (no loop). Every topic is
 // selectable; topics with no exercises yet carry a "soon" badge and dim slightly.
+.topicSection {
+  margin-bottom: 14px;
+}
+
+// Header above the strip: a section label + an "n / total" counter. The counter makes
+// the full topic count visible (you can't see it from the few chips on screen), which
+// is itself the strongest hint that the strip scrolls.
+.topicHead {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.topicHeadLabel {
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.topicHeadCount {
+  font-family: ui-monospace, monospace;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--r);
+
+  span {
+    color: var(--muted);
+    font-weight: 400;
+  }
+}
+
+// Strip row: optional arrows (desktop) flanking the scrollable Embla viewport.
+.topicStrip {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.topicArrow {
+  flex-shrink: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  background: var(--panel);
+  color: var(--text);
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.15s ease, border-color 0.15s ease;
+
+  &:hover:not(:disabled) {
+    border-color: var(--r);
+    color: var(--r);
+  }
+
+  &:disabled {
+    opacity: 0.25;
+    cursor: default;
+  }
+
+  // Touch-first: swipe + fades carry navigation on phones; arrows are desktop-only.
+  @media (max-width: 560px) {
+    display: none;
+  }
+}
+
 .topicEmbla {
+  flex: 1;
+  min-width: 0;
   overflow: hidden;
-  margin-bottom: 12px;
   cursor: grab;
 
   &:active {
     cursor: grabbing;
+  }
+
+  // Fade the chips out toward an edge that has more off-screen — a clear, conventional
+  // "there's more this way" cue. mask-image works over any background, unlike an overlay.
+  &.fadeR {
+    -webkit-mask-image: linear-gradient(to right, #000 80%, transparent 100%);
+    mask-image: linear-gradient(to right, #000 80%, transparent 100%);
+  }
+
+  &.fadeL {
+    -webkit-mask-image: linear-gradient(to left, #000 80%, transparent 100%);
+    mask-image: linear-gradient(to left, #000 80%, transparent 100%);
+  }
+
+  &.fadeL.fadeR {
+    -webkit-mask-image: linear-gradient(to right, transparent 0, #000 7%, #000 93%, transparent 100%);
+    mask-image: linear-gradient(to right, transparent 0, #000 7%, #000 93%, transparent 100%);
   }
 }
 

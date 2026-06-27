@@ -3,6 +3,15 @@
   --text: #EDE6DD; --muted: #8A7E73; --r: #E8A33D;     --l: #4FB0A5;     --ok: #6FBF73;
 }
 * { box-sizing: border-box; }
+
+// Keyboard users get a clear focus ring; mouse/touch clicks don't (—:focus-visible).
+// The app is full of custom <button>s with no default outline, so this is the only
+// affordance keyboard navigation has.
+:focus-visible {
+  outline: 2px solid var(--r);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
 html, body, #root { margin: 0; height: 100%; }
 body {
   background: var(--bg); color: var(--text);
