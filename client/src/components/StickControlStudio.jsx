@@ -1,8 +1,11 @@
-import React, { useState, useRef, useEffect, useCallback } from "react";
+import React, { useState, useRef, useEffect, useCallback, lazy, Suspense } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import { WheelGesturesPlugin } from "embla-carousel-wheel-gestures";
 import s from "../styles/studio.module.scss";
 import Notation from "./Notation.jsx";
+// Tap Trainer pulls in VexFlow (notation rendering) — load it only when its tab is opened,
+// so the Stick Control bundle stays light.
+const TapTrainer = lazy(() => import("./TapTrainer.jsx"));
 import { flatten, fmt, durLabel, LEVELS, BLANK } from "../lib/helpers.js";
 import { createPlayer } from "../lib/player.js";
 import { TOPICS } from "../lib/topics.js";
@@ -41,6 +44,7 @@ export default function StickControlStudio() {
   const [progress, setProgress] = useState({});
   const [totalSec, setTotalSec] = useState(0);
   const [loaded, setLoaded] = useState(false);
+  const [tab, setTab] = useState("studio");   // "studio" = the book exercises, "tap" = the Tap Trainer
 
   // topics: each section in the book is a topic; its exercises are the library rows
   // whose `section` matches. Every topic is selectable; one with no exercises yet
@@ -192,6 +196,14 @@ export default function StickControlStudio() {
   };
   useEffect(() => () => { if (playerRef.current) playerRef.current.stop(); }, []);
 
+  // Tap Trainer banks its practice seconds under a synthetic id so it persists and rolls
+  // into the "Practiced" total alongside the book exercises (sumSec sums every entry).
+  const bankPractice = useCallback((delta) => {
+    setTotalSec((s2) => s2 + delta);
+    setProgress((p) => { const c = p.__tap || BLANK; return { ...p, __tap: { ...c, sec: (c.sec || 0) + delta } }; });
+  }, []);
+  const switchTab = (t) => { if (t === tab) return; reset(); setTab(t); };
+
   const toggleDone = () => setProgress((p) => ({ ...p, [selId]: { ...(p[selId] || BLANK), done: !(p[selId] || BLANK).done } }));
   const resetAllProgress = () => {
     if (!window.confirm("Reset all practice memory? This permanently clears reps, times, best tempos and done marks for every exercise.")) return;
@@ -218,6 +230,18 @@ export default function StickControlStudio() {
           </div>
         </div>
 
+        <div className={s.tabBar} role="tablist">
+          <button className={`${s.tabBtn} ${tab === "studio" ? s.active : ""}`} role="tab" aria-selected={tab === "studio"} onClick={() => switchTab("studio")}>Stick Control</button>
+          <button className={`${s.tabBtn} ${tab === "tap" ? s.active : ""}`} role="tab" aria-selected={tab === "tap"} onClick={() => switchTab("tap")}>Tap Trainer</button>
+        </div>
+
+        {tab === "tap" && (
+          <Suspense fallback={<div className={s.pickerEmpty}>Loading trainer…</div>}>
+            <TapTrainer volume={volume} setVolume={setVolume} bankPractice={bankPractice} />
+          </Suspense>
+        )}
+
+        {tab === "studio" && (<>
         {library.length > 0
           ? <div className={s.topicSection}>
               <div className={s.topicHead}>
@@ -365,6 +389,7 @@ export default function StickControlStudio() {
             <button className={s.resetAllBtn} onClick={resetAllProgress}>Reset all practice memory</button>
           </div>
         )}
+        </>)}
       </div>
     </div>
   );
