@@ -1092,3 +1092,174 @@
     padding: 7px 1px;
   }
 }
+/* ---- Tabs (Stick Control · Tap Trainer) ---- */
+.tabBar {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid var(--border);
+}
+.tabBtn {
+  appearance: none;
+  border: none;
+  background: transparent;
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  padding: 10px 14px;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1px;
+  &:hover { color: var(--text); }
+  &.active { color: var(--text); border-bottom-color: var(--r); }
+}
+
+/* ---- Tap Trainer ---- */
+.tap { display: block; }
+
+.tapHead {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+.tapLevel { display: flex; flex-direction: column; gap: 2px; }
+.tapLevelNum {
+  font-size: 13px;
+  font-weight: 900;
+  color: var(--text);
+  span { color: var(--muted); font-weight: 700; }
+}
+.tapLevelName {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--r);
+}
+.tapTempo {
+  font-family: ui-monospace, monospace;
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--text);
+}
+
+.tapLadder { display: flex; gap: 6px; margin-bottom: 14px; }
+.tapStep {
+  flex: 1 1 0;
+  height: 6px;
+  border-radius: 3px;
+  background: var(--border);
+  &.done { background: var(--ok); }
+  &.cur { background: var(--r); }
+}
+
+.tapStaffWrap { position: relative; width: 100%; }
+.tapPlayhead {
+  position: absolute;
+  top: 8px;
+  left: 0;
+  opacity: 0;
+  width: 2px;
+  height: 84px;
+  margin-left: -1px;
+  background: var(--r);
+  box-shadow: 0 0 8px 1px var(--r);
+  pointer-events: none;
+  will-change: transform;
+}
+.tapHighlight {
+  position: absolute;
+  top: 6px;
+  left: 0;
+  opacity: 0;
+  width: 30px;
+  height: 88px;
+  margin-left: -15px;
+  border-radius: 7px;
+  background: rgba(232, 163, 61, 0.16);
+  pointer-events: none;
+  will-change: transform;
+}
+.tapMarks { position: absolute; top: 96px; left: 0; right: 0; height: 16px; pointer-events: none; }
+.tapMark {
+  position: absolute;
+  top: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 0 6px 1px currentColor;
+  animation: tapPop 0.18s ease-out;
+}
+@keyframes tapPop { from { transform: translateX(-50%) scale(1.8); opacity: 0.4; } to { transform: translateX(-50%) scale(1); opacity: 1; } }
+
+.tapPad {
+  width: 100%;
+  margin: 4px 0 14px;
+  padding: 26px 14px;
+  border-radius: 16px;
+  border: 2px dashed var(--border);
+  background: var(--panel);
+  color: var(--muted);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  touch-action: none;
+  user-select: none;
+  -webkit-user-select: none;
+  transition: border-color 0.12s, background 0.12s, transform 0.05s;
+  span { font-size: 30px; font-weight: 900; letter-spacing: 0.12em; color: var(--text); }
+  small { font-size: 12px; letter-spacing: 0.06em; }
+  &:active { transform: scale(0.995); }
+  &.live {
+    border-color: var(--r);
+    border-style: solid;
+    background: var(--panel2);
+    box-shadow: 0 0 0 1px var(--r) inset, 0 0 24px -8px var(--r);
+    span { color: var(--r); }
+  }
+}
+
+.tapStatus {
+  text-align: center;
+  font-size: 14px;
+  color: var(--text);
+  min-height: 20px;
+  margin-bottom: 14px;
+}
+
+.tapScore {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 14px 12px;
+  margin-bottom: 16px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: var(--panel);
+  text-align: center;
+  > div { flex: 1 1 0; }
+}
+
+/* "next note" target — a pulsing ring leading the playhead so the upcoming tap is obvious.
+   Hidden via visibility (its pulse animates opacity, so opacity can't double as a toggle). */
+.tapNext {
+  position: absolute;
+  top: 4px;
+  left: 0;
+  visibility: hidden;
+  width: 34px;
+  height: 92px;
+  margin-left: -17px;
+  border-radius: 8px;
+  border: 2px solid var(--l);
+  box-shadow: 0 0 12px -2px var(--l);
+  pointer-events: none;
+  will-change: transform;
+  animation: tapNextPulse 0.85s ease-in-out infinite;
+}
+@keyframes tapNextPulse { 0%, 100% { opacity: 0.45; } 50% { opacity: 0.95; } }
